@@ -1,0 +1,602 @@
+[
+  {
+    "company_id": "OC-001",
+    "slug": "aboard-rv",
+    "name": "Aboard RV",
+    "search_text": "aboard rv | mobility & transportation | mobility / electric rv | t4 extended-range electric travel trailer and associated electrified rv platform. | electric rv systems; range-extension systems; vehicle integration; mobile living hardware | mobility | vehicle integration electric rv systems mobile living hardware range-extension systems | orange"
+  },
+  {
+    "company_id": "OC-002",
+    "slug": "ac-future",
+    "name": "AC Future",
+    "search_text": "ac future | mobility & transportation | mobility / smart rv | smart recreational vehicle and mobile living platform developer. | smart mobility hardware; mobility systems; vehicle engineering; physical product integration | mobility | physical product integration vehicle engineering mobility systems smart mobility hardware | irvine"
+  },
+  {
+    "company_id": "OC-003",
+    "slug": "acceliot",
+    "name": "Acceliot",
+    "search_text": "acceliot | semiconductors & electronics | industrial iot / rfid | rfid, rtls and iot systems for industrial and aerospace applications. | rfid systems; rtls; industrial iot; edge sensing; rf systems | aerospace industrial | edge sensing industrial iot rf systems rfid systems rtls | huntington beach"
+  },
+  {
+    "company_id": "OC-004",
+    "slug": "addman-polymer",
+    "name": "ADDMAN Polymer",
+    "search_text": "addman polymer | advanced manufacturing | advanced manufacturing / additive | polymer additive manufacturing and rapid prototyping facility, formerly dinsmore. | polymer additive manufacturing; rapid prototyping; production additive manufacturing; dfam / additive engineering; additive manufacturing | polymer additive manufacturing rapid prototyping production additive manufacturing additive manufacturing | advanced manufacturing | dfam / additive engineering additive manufacturing polymer additive manufacturing production additive manufacturing rapid prototyping | irvine"
+  },
+  {
+    "company_id": "OC-005",
+    "slug": "advanced-composite-products-technology-acpt",
+    "name": "Advanced Composite Products & Technology (ACPT)",
+    "search_text": "advanced composite products & technology (acpt) | aerospace & space | advanced composites / aerospace manufacturing | composite design and manufacturing for aerospace, defense and industrial applications. | composite manufacturing; filament winding; composite tooling; pressure vessels; aerospace structures; aerospace manufacturing | composite manufacturing filament winding composite tooling aerospace structures pressure vessels | aerospace defense industrial | aerospace manufacturing composite manufacturing composite tooling filament winding aerospace structures pressure vessels | huntington beach"
+  },
+  {
+    "company_id": "OC-006",
+    "slug": "airtech-international",
+    "name": "Airtech International",
+    "search_text": "airtech international | advanced manufacturing | advanced composites / materials | composite tooling, vacuum bagging materials and additive manufacturing solutions. | composite tooling; vacuum bagging materials; additive manufacturing; composite process materials; composite manufacturing; advanced materials | composite tooling additive manufacturing composite manufacturing | advanced manufacturing | additive manufacturing composite manufacturing composite tooling advanced materials composite process materials vacuum bagging materials | huntington beach"
+  },
+  {
+    "company_id": "OC-007",
+    "slug": "align-precision",
+    "name": "ALIGN PRECISION",
+    "search_text": "align precision | aerospace & space | precision manufacturing / aerospace & defense | precision machining and manufacturing for aerospace, defense and space. | precision machining; cnc machining; aerospace manufacturing; defense manufacturing | multi-axis cnc machining multi-spindle long-bed machining hard-metal milling and turning aerospace structural assemblies | aerospace space defense | aerospace manufacturing cnc machining defense manufacturing precision machining | garden grove"
+  },
+  {
+    "company_id": "OC-008",
+    "slug": "alpha-motor-corporation",
+    "name": "Alpha Motor Corporation",
+    "search_text": "alpha motor corporation | mobility & transportation | electric vehicles | electric vehicle developer. | electric vehicle systems; mobility systems; vehicle engineering; physical product integration | automotive | physical product integration vehicle engineering electric vehicle systems mobility systems | irvine"
+  },
+  {
+    "company_id": "OC-009",
+    "slug": "anduril-industries",
+    "name": "Anduril Industries",
+    "search_text": "anduril industries | defense | defense technology / autonomy | defense technology company developing autonomous systems, sensors, software and hardware. | autonomous systems; sensor systems; defense hardware; ai-enabled autonomy; systems integration; autonomy | defense | systems integration autonomous systems defense hardware sensor systems ai-enabled autonomy autonomy | irvine"
+  },
+  {
+    "company_id": "OC-010",
+    "slug": "aondevices",
+    "name": "AONDevices",
+    "search_text": "aondevices | semiconductors & electronics | semiconductors / edge ai | fabless semiconductor company developing low-power edge ai processors and algorithms. | edge ai processors; low-power ic design; embedded ai algorithms; fabless semiconductor design; edge ai; semiconductor design | electronics | fabless semiconductor design edge ai edge ai processors embedded ai algorithms low-power ic design semiconductor design | irvine"
+  },
+  {
+    "company_id": "OC-011",
+    "slug": "apex-space-defense",
+    "name": "APEX Space & Defense",
+    "search_text": "apex space & defense | aerospace & space | aerospace & defense manufacturing | aerospace and defense manufacturing group with composite and precision manufacturing businesses. | composite manufacturing; defense manufacturing; aerospace systems; systems engineering | composite design and manufacturing mission-critical structures aerospace/defense production | aerospace defense | systems engineering composite manufacturing defense manufacturing aerospace systems | santa ana"
+  },
+  {
+    "company_id": "OC-012",
+    "slug": "archer-aviation",
+    "name": "Archer Aviation",
+    "search_text": "archer aviation | aerospace & space | aerospace / evtol | evtol aircraft and aerospace/defense technology developer. | evtol aircraft; aircraft systems; aerospace systems; systems engineering | aerospace defense | systems engineering aerospace systems aircraft systems evtol aircraft | huntington beach"
+  },
+  {
+    "company_id": "OC-089",
+    "slug": "archytas-automation",
+    "name": "Archytas Automation",
+    "search_text": "archytas automation | robotics & autonomy | industrial automation / robotics | integrates robotic arms, cobots and automation systems for manufacturing, laboratory and packaging applications. | robotics integration; cobots; industrial automation; packaging automation; lab automation; robotics | industrial | robotics integration cobots lab automation packaging automation robotics industrial automation | irvine"
+  },
+  {
+    "company_id": "OC-013",
+    "slug": "arkisys",
+    "name": "Arkisys",
+    "search_text": "arkisys | aerospace & space | space infrastructure | modular in-space infrastructure and orbital platform developer. | space infrastructure; aerospace systems; systems engineering; mission hardware | space-platform integration reusable spacecraft hardware payload integration in-space servicing systems | space | systems engineering aerospace systems mission hardware space infrastructure | los alamitos"
+  },
+  {
+    "company_id": "OC-014",
+    "slug": "astroforge",
+    "name": "AstroForge",
+    "search_text": "astroforge | aerospace & space | space / asteroid mining | spacecraft developer pursuing asteroid resource extraction. | spacecraft systems; aerospace systems; systems engineering; mission hardware | space | systems engineering aerospace systems mission hardware spacecraft systems | seal beach"
+  },
+  {
+    "company_id": "OC-015",
+    "slug": "astronics-test-systems",
+    "name": "Astronics Test Systems",
+    "search_text": "astronics test systems | aerospace & space | aerospace / defense test & measurement | designs and manufactures automated test and measurement systems for aerospace, defense, semiconductor and other mission-critical electronics. | automated test equipment; test & measurement; electronic instrumentation; mission-critical electronics testing; semiconductor design | automated test equipment electronic test instruments test program sets mixed-signal pcb design electro-mechanical systems | aerospace defense electronics | mission-critical electronics testing automated test equipment electronic instrumentation semiconductor design test & measurement | irvine"
+  },
+  {
+    "company_id": "OC-016",
+    "slug": "auriga-space",
+    "name": "Auriga Space",
+    "search_text": "auriga space | aerospace & space | space launch / electromagnetic systems | electromagnetic launch systems and hypersonic-materials testing services. | electromagnetic launch; hypersonic test systems; pulsed power / launch energetics; defense launch systems | space defense | defense launch systems hypersonic test systems electromagnetic launch pulsed power / launch energetics | garden grove"
+  },
+  {
+    "company_id": "OC-017",
+    "slug": "biodynamik",
+    "name": "Biodynamik",
+    "search_text": "biodynamik | medtech & biotech | medtech / orthopedics | xt3 orthopedic/wound-care medical device platform. | medical devices; wound-care technology; medical / biotech hardware; product engineering | medical-device development and manufacturing | medical | product engineering medical / biotech hardware medical devices wound-care technology | lake forest"
+  },
+  {
+    "company_id": "OC-100",
+    "slug": "bodyenergy-technology",
+    "name": "BodyEnergy Technology",
+    "search_text": "bodyenergy technology | industrial systems | fitness hardware / mechanical systems | develops motor-free human-powered treadmill systems using patented body-driven propulsion. | human-powered treadmill mechanics; mechanical exercise systems; fitness equipment engineering; physical product manufacturing | physical product manufacturing | industrial systems | fitness equipment engineering physical product manufacturing human-powered treadmill mechanics mechanical exercise systems | irvine"
+  },
+  {
+    "company_id": "OC-018",
+    "slug": "brelle",
+    "name": "Brelle",
+    "search_text": "brelle | other hard tech | electrified performance technology | developer of electrified performance technologies. | rf systems; hard-tech product development; physical systems; systems engineering | other hard tech | hard-tech product development systems engineering physical systems rf systems | los alamitos"
+  },
+  {
+    "company_id": "OC-088",
+    "slug": "chore-robotics",
+    "name": "Chore Robotics",
+    "search_text": "chore robotics | robotics & autonomy | robotics / physical ai | develops an autonomous modular robotic platform for indoor and outdoor property-maintenance tasks. | robotics; autonomy; physical ai; mechatronic systems | robotics & autonomy | mechatronic systems robotics autonomy physical ai | irvine"
+  },
+  {
+    "company_id": "OC-019",
+    "slug": "comtech-space-components-and-antennas",
+    "name": "Comtech Space Components and Antennas",
+    "search_text": "comtech space components and antennas | aerospace & space | space communications / antennas | satellite and launch tracking communications components and antennas. | satellite communications; antenna systems; launch tracking communications; rf components; satellite systems | space communications | antenna systems launch tracking communications satellite systems rf components satellite communications | cypress"
+  },
+  {
+    "company_id": "OC-096",
+    "slug": "creabot",
+    "name": "Creabot",
+    "search_text": "creabot | robotics & autonomy | robotics / education hardware | designs and supplies robotics kits, components and learning hardware for education, makers and industry. | robotics; autonomy; mechatronic systems | robotics & autonomy | mechatronic systems robotics autonomy | santa ana"
+  },
+  {
+    "company_id": "OC-020",
+    "slug": "design-west-technologies",
+    "name": "Design West Technologies",
+    "search_text": "design west technologies | defense | defense manufacturing | weapons systems, cbrn equipment and vertically integrated defense manufacturing. | defense systems manufacturing; cbrn equipment; weapons-system components; vertical integration; defense manufacturing | cnc machining injection molding robotic welding assembly electromechanical manufacturing environmental and analytical testing | defense | vertical integration defense manufacturing defense systems manufacturing cbrn equipment weapons-system components | tustin"
+  },
+  {
+    "company_id": "OC-021",
+    "slug": "dreamstar-lines",
+    "name": "Dreamstar Lines",
+    "search_text": "dreamstar lines | mobility & transportation | rail / mobility | private passenger rail venture focused on premium overnight rail service. | rail systems; mobility systems; vehicle engineering; physical product integration | mobility rail | physical product integration vehicle engineering mobility systems rail systems | newport beach"
+  },
+  {
+    "company_id": "OC-098",
+    "slug": "ducommun",
+    "name": "Ducommun",
+    "search_text": "ducommun | aerospace & space | aerospace / defense manufacturing | produces engineered electronics, structural systems, aerostructures and related aerospace/defense products. | aerospace structures; aerostructures manufacturing; engineered electronics; defense manufacturing | aerostructures manufacturing defense manufacturing | aerospace defense | aerostructures manufacturing defense manufacturing aerospace structures engineered electronics | costa mesa"
+  },
+  {
+    "company_id": "OC-095",
+    "slug": "econtrols",
+    "name": "eControls",
+    "search_text": "econtrols | industrial systems | building controls / hvac hardware | designs and manufactures hvac zoning, airflow, ventilation and damper-control hardware. | hvac controls; airflow controls; ventilation controls; damper hardware; rf systems; hvac hardware | building systems | airflow controls damper hardware hvac controls hvac hardware ventilation controls rf systems | laguna hills"
+  },
+  {
+    "company_id": "OC-023",
+    "slug": "ecotune",
+    "name": "Ecotune",
+    "search_text": "ecotune | materials & composites | advanced materials / bioplastics | bio-based, plastic-free materials startup. | advanced materials; materials engineering; physical product manufacturing | physical product manufacturing | materials & composites | materials engineering physical product manufacturing advanced materials | irvine"
+  },
+  {
+    "company_id": "OC-024",
+    "slug": "elevate-aircraft-seating",
+    "name": "Elevate Aircraft Seating",
+    "search_text": "elevate aircraft seating | aerospace & space | aerospace interiors | business-class aircraft seating manufacturer, renamed from adient aerospace in 2025. | aircraft systems; aerospace systems; systems engineering; mission hardware | aerospace | systems engineering aerospace systems aircraft systems mission hardware | huntington beach"
+  },
+  {
+    "company_id": "OC-025",
+    "slug": "encore-interiors",
+    "name": "EnCore Interiors",
+    "search_text": "encore interiors | aerospace & space | aerospace interiors | designs, manufactures and certifies aircraft interior products including galleys, lavatories, monuments and related cabin systems. | aircraft systems; aerospace systems; systems engineering; mission hardware | aerospace | systems engineering aerospace systems aircraft systems mission hardware | huntington beach"
+  },
+  {
+    "company_id": "OC-026",
+    "slug": "evergreen-biotech",
+    "name": "Evergreen Biotech",
+    "search_text": "evergreen biotech | semiconductors & electronics | biotechnology | bioprocessing infrastructure and systems intended to improve biotechnology manufacturing and scale-up. | bioprocessing / biotechnology; industrial iot; electronic hardware; electronics engineering | biotechnology | electronics engineering electronic hardware bioprocessing / biotechnology industrial iot | laguna niguel"
+  },
+  {
+    "company_id": "OC-027",
+    "slug": "exoanalytic-solutions",
+    "name": "ExoAnalytic Solutions",
+    "search_text": "exoanalytic solutions | aerospace & space | space domain awareness | commercial space-domain-awareness sensor network and analytics provider. | space-domain awareness; aerospace systems; systems engineering; mission hardware | space | systems engineering aerospace systems mission hardware space-domain awareness | foothill ranch"
+  },
+  {
+    "company_id": "OC-028",
+    "slug": "fieldai",
+    "name": "FieldAI",
+    "search_text": "fieldai | robotics & autonomy | robotics / embodied ai | field-ready embodied ai and autonomy systems for robots operating in unstructured environments. | embodied ai; robot autonomy; perception / planning; field robotics software; robotics; autonomy | robotics & autonomy | robotics autonomy embodied ai field robotics software perception / planning robot autonomy | irvine"
+  },
+  {
+    "company_id": "OC-029",
+    "slug": "gkn-aerospace",
+    "name": "GKN Aerospace",
+    "search_text": "gkn aerospace | aerospace & space | aerospace manufacturing | aerospace transparencies and structures manufacturing, including military and commercial aircraft products. | aerospace transparencies; aircraft structures; aerospace manufacturing; military aircraft components; aircraft systems | aerospace manufacturing | aerospace | aerospace manufacturing aerospace transparencies aircraft structures aircraft systems military aircraft components | garden grove"
+  },
+  {
+    "company_id": "OC-030",
+    "slug": "great-western-grinding",
+    "name": "Great Western Grinding",
+    "search_text": "great western grinding | advanced manufacturing | precision manufacturing | precision grinding, cnc and welding for aerospace and industrial applications. | precision grinding; cnc machining; welding; aerospace repair / manufacturing | precision grinding cnc machining welding aerospace repair / manufacturing | aerospace industrial | aerospace repair / manufacturing cnc machining precision grinding welding | huntington beach"
+  },
+  {
+    "company_id": "OC-031",
+    "slug": "griswold-controls",
+    "name": "Griswold Controls",
+    "search_text": "griswold controls | industrial systems | industrial equipment / flow controls | hvac and irrigation flow-control products. | flow-control hardware; hvac hardware; industrial hardware; controls / systems engineering | hvac and irrigation flow-control valve engineering and u.s. manufacturing | industrial building systems | controls / systems engineering flow-control hardware hvac hardware industrial hardware | irvine"
+  },
+  {
+    "company_id": "OC-032",
+    "slug": "halo-industries",
+    "name": "Halo Industries",
+    "search_text": "halo industries | aerospace & space | precision manufacturing / aerospace | precision-machined components for aerospace, defense and communications satellites. | satellite systems; aerospace systems; systems engineering; mission hardware | aerospace space defense communications | systems engineering aerospace systems mission hardware satellite systems | huntington beach"
+  },
+  {
+    "company_id": "OC-033",
+    "slug": "harbinger-motors",
+    "name": "Harbinger Motors",
+    "search_text": "harbinger motors | mobility & transportation | electric commercial vehicles | electric chassis, powertrain and vehicle-control platform for medium-duty commercial vehicles. | ev chassis systems; electric powertrains; medium-duty vehicle platform; vehicle controls | vertically integrated ev chassis and medium-duty vehicle manufacturing in garden grove | commercial vehicles | ev chassis systems electric powertrains medium-duty vehicle platform vehicle controls | garden grove"
+  },
+  {
+    "company_id": "OC-034",
+    "slug": "hawkrobo",
+    "name": "HawkRobo",
+    "search_text": "hawkrobo | robotics & autonomy | robotics / public safety | ai robotics systems for public-safety and commercial applications. | robotics; autonomy; mechatronic systems | public safety | mechatronic systems robotics autonomy | irvine"
+  },
+  {
+    "company_id": "OC-035",
+    "slug": "hopaero",
+    "name": "HopAero",
+    "search_text": "hopaero | aerospace & space | aerospace / hypersonic cargo | autonomous high-speed/hypersonic cargo aircraft startup. | autonomy; aircraft systems; aerospace systems; systems engineering | aerospace | systems engineering aerospace systems aircraft systems autonomy | orange"
+  },
+  {
+    "company_id": "OC-036",
+    "slug": "hydro-dynamic-power-systems",
+    "name": "Hydro Dynamic Power Systems",
+    "search_text": "hydro dynamic power systems | energy & grid | marine energy / tidal power | r&d company developing marine tidal energy systems. | energy systems; energy hardware; power systems; physical infrastructure | energy marine | energy hardware energy systems physical infrastructure power systems | orange"
+  },
+  {
+    "company_id": "OC-037",
+    "slug": "ibis-industries",
+    "name": "Ibis Industries",
+    "search_text": "ibis industries | advanced manufacturing | advanced manufacturing | precision 3-axis and 5-axis cnc machining and system builds for advanced industries. | 3-axis cnc machining; 5-axis cnc machining; precision machining; system builds; manufacturing automation; cnc machining | 3-axis cnc machining 5-axis cnc machining precision machining system builds cnc machining | advanced manufacturing | 3-axis cnc machining 5-axis cnc machining cnc machining precision machining system builds manufacturing automation | santa ana"
+  },
+  {
+    "company_id": "OC-091",
+    "slug": "indie-semiconductor",
+    "name": "indie Semiconductor",
+    "search_text": "indie semiconductor | semiconductors & electronics | semiconductors / automotive sensing | develops automotive semiconductors, photonics and mixed-signal systems for adas and adjacent industrial applications. | automotive semiconductors; photonics; mixed-signal ics; adas sensing; semiconductor design | industrial automotive electronics | adas sensing automotive semiconductors mixed-signal ics photonics semiconductor design | aliso viejo"
+  },
+  {
+    "company_id": "OC-038",
+    "slug": "inplay-technologies",
+    "name": "InPlay Technologies",
+    "search_text": "inplay technologies | semiconductors & electronics | semiconductors / wireless | fabless semiconductor company developing low-power wireless technology for iot. | semiconductor design; wireless systems; industrial iot; electronic hardware | electronics | electronic hardware industrial iot semiconductor design wireless systems | irvine"
+  },
+  {
+    "company_id": "OC-094",
+    "slug": "intellian-technologies",
+    "name": "Intellian Technologies",
+    "search_text": "intellian technologies | semiconductors & electronics | satellite communications hardware | designs and manufactures satellite communications antennas, ground gateways and terminals for commercial and government markets. | satellite communications antennas; ground gateways; user terminals; rf / satcom systems; satellite systems | space communications | ground gateways satellite communications antennas satellite systems user terminals rf / satcom systems | irvine"
+  },
+  {
+    "company_id": "OC-039",
+    "slug": "karman-space-defense",
+    "name": "Karman Space & Defense",
+    "search_text": "karman space & defense | aerospace & space | aerospace & defense manufacturing | aerospace and defense manufacturing platform serving missile, space and defense programs. | defense manufacturing; aerospace systems; systems engineering; mission hardware | defense manufacturing | aerospace space defense | systems engineering defense manufacturing aerospace systems mission hardware | brea"
+  },
+  {
+    "company_id": "OC-040",
+    "slug": "kinetic-automation",
+    "name": "Kinetic Automation",
+    "search_text": "kinetic automation | robotics & autonomy | automotive robotics / service automation | technology-enabled automotive service and repair platform using robotics/automation. | robotics; autonomy; mechatronic systems | ai/computer-vision vehicle scanning robotic adas calibration automated ev/av service hardware | automotive | mechatronic systems robotics autonomy | costa mesa"
+  },
+  {
+    "company_id": "OC-041",
+    "slug": "lanic-aerospace",
+    "name": "Lanic Aerospace",
+    "search_text": "lanic aerospace | aerospace & space | aerospace manufacturing | aerospace manufacturing and engineering company. | aerospace manufacturing; aerospace systems; systems engineering; mission hardware | aerospace manufacturing | aerospace | systems engineering aerospace manufacturing aerospace systems mission hardware | huntington beach"
+  },
+  {
+    "company_id": "OC-099",
+    "slug": "lantronix",
+    "name": "Lantronix",
+    "search_text": "lantronix | semiconductors & electronics | iot / edge-compute hardware | develops connected iot, edge-compute, networking and embedded hardware/software platforms. | embedded systems; iot hardware; edge computing; networking hardware; industrial iot | semiconductors & electronics | iot hardware networking hardware edge computing embedded systems industrial iot | irvine"
+  },
+  {
+    "company_id": "OC-042",
+    "slug": "layup-parts",
+    "name": "Layup Parts",
+    "search_text": "layup parts | advanced manufacturing | advanced composites | composite parts and tooling manufacturer. | composite parts manufacturing; composite tooling; digital manufacturing workflow; aerospace composites; composite manufacturing | composite parts manufacturing composite tooling composite manufacturing | advanced manufacturing | composite manufacturing composite parts manufacturing composite tooling aerospace composites digital manufacturing workflow | huntington beach"
+  },
+  {
+    "company_id": "OC-043",
+    "slug": "litrinium",
+    "name": "Litrinium",
+    "search_text": "litrinium | semiconductors & electronics | high-speed interconnect / electronics | signal-integrity and ultra-high-speed interconnect technology. | high-speed interconnect; signal integrity; analog / mixed-signal electronics; ai data-center connectivity | high-speed analog semiconductor and signal-integrity ic design | semiconductors & electronics | ai data-center connectivity analog / mixed-signal electronics high-speed interconnect signal integrity | aliso viejo"
+  },
+  {
+    "company_id": "OC-044",
+    "slug": "mach-industries",
+    "name": "Mach Industries",
+    "search_text": "mach industries | defense | defense technology / autonomous systems | scalable defense systems including unmanned platforms, weapons and propulsion/energetics manufacturing. | autonomous defense systems; weapons manufacturing; propulsion / energetics; unmanned systems; scalable defense manufacturing; autonomy | weapons manufacturing | defense | scalable defense manufacturing weapons manufacturing autonomous defense systems unmanned systems autonomy propulsion / energetics | huntington beach"
+  },
+  {
+    "company_id": "OC-045",
+    "slug": "makani-science",
+    "name": "Makani Science",
+    "search_text": "makani science | medtech & biotech | medtech / respiratory monitoring | wearable respiratory monitoring medical technology. | medical devices; medical / biotech hardware; product engineering; regulated physical technology | medical | product engineering medical / biotech hardware medical devices regulated physical technology | irvine"
+  },
+  {
+    "company_id": "OC-093",
+    "slug": "marvin-test-solutions",
+    "name": "Marvin Test Solutions",
+    "search_text": "marvin test solutions | aerospace & space | aerospace test & measurement | vertically integrated aerospace test-and-measurement manufacturer supplying automated test systems, instruments and turnkey solutions. | automated test systems; test & measurement; electronic instruments; turnkey test integration | vertically integrated aerospace test-and-measurement design, instrumentation and turnkey systems manufacturing | aerospace | turnkey test integration automated test systems electronic instruments test & measurement | irvine"
+  },
+  {
+    "company_id": "OC-046",
+    "slug": "menlo-micro",
+    "name": "Menlo Micro",
+    "search_text": "menlo micro | semiconductors & electronics | semiconductors / rf mems | rf mems ideal switch technology and related switching products. | rf mems; high-power switching; semiconductor switching; rf components; semiconductor design; rf systems | mems/rf switch design, semiconductor product engineering and commercialization | electronics | rf components high-power switching rf mems rf systems semiconductor design semiconductor switching | irvine"
+  },
+  {
+    "company_id": "OC-047",
+    "slug": "mercury-systems",
+    "name": "Mercury Systems",
+    "search_text": "mercury systems | defense | defense electronics / microelectronics | mission-critical electronics and microelectronics for aerospace and defense. | defense microelectronics; rf electronics; embedded computing; electronic warfare hardware | defense electronics microelectronics rf/microwave secure processing electronic manufacturing | aerospace defense | electronic warfare hardware defense microelectronics embedded computing rf electronics | cypress"
+  },
+  {
+    "company_id": "OC-048",
+    "slug": "mobix-labs",
+    "name": "Mobix Labs",
+    "search_text": "mobix labs | semiconductors & electronics | semiconductors / rf | rf, connectivity and electromagnetic interference components for communications and defense markets. | semiconductor design; rf systems; electronic hardware; electronics engineering | defense communications electronics | electronics engineering electronic hardware rf systems semiconductor design | irvine"
+  },
+  {
+    "company_id": "OC-049",
+    "slug": "movandi",
+    "name": "Movandi",
+    "search_text": "movandi | semiconductors & electronics | semiconductors / 5g | semiconductor and systems company focused on 5g/mmwave connectivity. | mmwave systems; 5g rf semiconductors; beamforming / repeater systems; rf connectivity; semiconductor design; 5g / mmwave | rf semiconductor design phased-array antenna modules mmwave repeater hardware communications systems | electronics | beamforming / repeater systems 5g / mmwave 5g rf semiconductors rf connectivity semiconductor design mmwave systems | irvine"
+  },
+  {
+    "company_id": "OC-050",
+    "slug": "neon-aero",
+    "name": "Neon Aero",
+    "search_text": "neon aero | aerospace & space | aerospace manufacturing | aerospace components and manufacturing startup. | aerospace manufacturing; aerospace systems; systems engineering; mission hardware | aerospace manufacturing | aerospace | systems engineering aerospace manufacturing aerospace systems mission hardware | irvine"
+  },
+  {
+    "company_id": "OC-051",
+    "slug": "newlight-technologies",
+    "name": "Newlight Technologies",
+    "search_text": "newlight technologies | materials & composites | advanced materials / biomaterials | aircarbon biomaterial producer using captured greenhouse gas. | advanced materials; biomaterials; materials engineering; physical product manufacturing | carbon-capture materials development and physical-product manufacturing | materials & composites | materials engineering physical product manufacturing advanced materials biomaterials | huntington beach"
+  },
+  {
+    "company_id": "OC-052",
+    "slug": "norotos",
+    "name": "Norotos",
+    "search_text": "norotos | defense | defense equipment / night vision hardware | manufacturer of night-vision mounting and tactical hardware. | defense systems; mission hardware; systems integration | precision machining night-vision helmet mount and shroud manufacturing metals/plastics/composites fabrication | defense | systems integration defense systems mission hardware | santa ana"
+  },
+  {
+    "company_id": "OC-053",
+    "slug": "oceanbotics",
+    "name": "Oceanbotics",
+    "search_text": "oceanbotics | robotics & autonomy | marine robotics / rovs | underwater remotely operated vehicles and marine robotic systems. | underwater robotics; rovs; marine imaging / inspection; robotic control systems; robotics | professional underwater-drone / rov design and manufacturing | marine | marine imaging / inspection rovs robotics underwater robotics robotic control systems | irvine"
+  },
+  {
+    "company_id": "OC-022",
+    "slug": "ondas-sentinel-dzyne-technologies",
+    "name": "Ondas Sentinel / DZYNE Technologies",
+    "search_text": "ondas sentinel / dzyne technologies | aerospace & space | autonomous aircraft / defense | autonomous aircraft and defense technology company. | autonomy; aircraft systems; aerospace systems; systems engineering | aerospace defense | systems engineering aerospace systems aircraft systems autonomy | irvine"
+  },
+  {
+    "company_id": "OC-054",
+    "slug": "opensonic",
+    "name": "OpenSonic",
+    "search_text": "opensonic | medtech & biotech | medtech / focused ultrasound | high-intensity focused ultrasound medical-device company, formerly fuscalpel medical. | medical devices; medical / biotech hardware; product engineering; regulated physical technology | medical | product engineering medical / biotech hardware medical devices regulated physical technology | irvine"
+  },
+  {
+    "company_id": "OC-055",
+    "slug": "oso-robotics",
+    "name": "Oso Robotics",
+    "search_text": "oso robotics | robotics & autonomy | robotics / outdoor autonomy | autonomous outdoor equipment and robotics. | robotics; autonomy; mechatronic systems | robotics & autonomy | mechatronic systems robotics autonomy | laguna hills"
+  },
+  {
+    "company_id": "OC-056",
+    "slug": "overair",
+    "name": "Overair",
+    "search_text": "overair | aerospace & space | aerospace / evtol | advanced air mobility / evtol aircraft developer. | evtol aircraft; aircraft systems; aerospace systems; systems engineering | aerospace mobility | systems engineering aerospace systems aircraft systems evtol aircraft | santa ana"
+  },
+  {
+    "company_id": "OC-057",
+    "slug": "pretika-medtech",
+    "name": "Pretika MedTech",
+    "search_text": "pretika medtech | medtech & biotech | medtech / wound care | connected wound-care medical technology developer. | medical devices; wound-care technology; medical / biotech hardware; product engineering | medical | product engineering medical / biotech hardware medical devices wound-care technology | irvine"
+  },
+  {
+    "company_id": "OC-058",
+    "slug": "rave-manufacturing",
+    "name": "RAVE Manufacturing",
+    "search_text": "rave manufacturing | advanced manufacturing | advanced manufacturing / composites | rapid prototyping, composites, 5-axis machining and low-observable/rf structures. | 5-axis machining; composite manufacturing; rapid prototyping; low-observable structures; rf structures; rf systems | 5-axis machining composite manufacturing rapid prototyping | advanced manufacturing | 5-axis machining composite manufacturing rapid prototyping low-observable structures rf structures rf systems | anaheim"
+  },
+  {
+    "company_id": "OC-059",
+    "slug": "regal-technology-partners",
+    "name": "Regal Technology Partners",
+    "search_text": "regal technology partners | defense | defense electronics manufacturing | designs and manufactures mission-critical defense electronics including circuit card assemblies, cables, harnesses and box/system builds. | circuit card assembly; cable & harness assembly; box / system builds; defense electronics manufacturing; design engineering | circuit card assembly cable & harness assembly box / system builds defense electronics manufacturing | defense | design engineering box / system builds cable & harness assembly circuit card assembly defense electronics manufacturing | santa ana"
+  },
+  {
+    "company_id": "OC-060",
+    "slug": "rekovar",
+    "name": "Rekovar",
+    "search_text": "rekovar | medtech & biotech | medtech | neomonki neonatal monitoring kit and related infant-care medical-device development. | medical devices; medical / biotech hardware; product engineering; regulated physical technology | medical | product engineering medical / biotech hardware medical devices regulated physical technology | lake forest"
+  },
+  {
+    "company_id": "OC-061",
+    "slug": "renata-medical",
+    "name": "Renata Medical",
+    "search_text": "renata medical | medtech & biotech | medtech / cardiovascular | minima pediatric vascular stent platform and related pediatric cardiovascular technologies. | medical devices; cardiovascular devices; medical / biotech hardware; product engineering | medical | product engineering cardiovascular devices medical / biotech hardware medical devices | newport beach"
+  },
+  {
+    "company_id": "OC-062",
+    "slug": "rivian",
+    "name": "Rivian",
+    "search_text": "rivian | mobility & transportation | electric vehicles | electric vehicle manufacturer and technology company. | electric vehicle systems; mobility systems; vehicle engineering; physical product integration | automotive | physical product integration vehicle engineering electric vehicle systems mobility systems | irvine"
+  },
+  {
+    "company_id": "OC-063",
+    "slug": "rossmerica-industries-llc",
+    "name": "RossMerica Industries LLC",
+    "search_text": "rossmerica industries llc | aerospace & space | aerospace electrical manufacturing | wiring harnesses and electrical assemblies for aerospace/industrial applications. | wire harnesses; aerospace systems; systems engineering; mission hardware | wire harnesses | aerospace industrial | systems engineering wire harnesses aerospace systems mission hardware | huntington beach"
+  },
+  {
+    "company_id": "OC-064",
+    "slug": "ryvid",
+    "name": "Ryvid",
+    "search_text": "ryvid | mobility & transportation | electric motorcycles | electric motorcycle company designing and building vehicles in california. | electric vehicle systems; mobility systems; vehicle engineering; physical product integration | mobility & transportation | physical product integration vehicle engineering electric vehicle systems mobility systems | fountain valley"
+  },
+  {
+    "company_id": "OC-065",
+    "slug": "sapphire-technologies",
+    "name": "Sapphire Technologies",
+    "search_text": "sapphire technologies | energy & grid | energy technology / turboexpanders | energy-recovery turboexpanders converting pressure energy into electricity. | energy systems; turbomachinery; energy hardware; power systems | energy | energy hardware energy systems power systems turbomachinery | cypress"
+  },
+  {
+    "company_id": "OC-066",
+    "slug": "scientific-applications-research-associates-sara",
+    "name": "Scientific Applications & Research Associates (SARA)",
+    "search_text": "scientific applications & research associates (sara) | defense | defense technology / rf & pulsed power | rf, emp, pulsed-power, acoustics and unmanned-systems technology. | rf systems; defense systems; mission hardware; systems integration | rf/emp systems engineering pulsed-power hardware acoustics rf/emp testing specialized electronics | defense | systems integration defense systems mission hardware rf systems | cypress"
+  },
+  {
+    "company_id": "OC-067",
+    "slug": "senra-systems",
+    "name": "Senra Systems",
+    "search_text": "senra systems | aerospace & space | aerospace manufacturing / wire systems | digital manufacturing systems for complex wire harnesses and related aerospace production. | wire-harness manufacturing; digital manufacturing; aerospace production automation; harness design / assembly; aerospace manufacturing; wire harnesses | wire-harness design automated harness manufacturing cable/harness assembly aerospace manufacturing | aerospace | aerospace manufacturing harness design / assembly wire harnesses wire-harness manufacturing aerospace production automation digital manufacturing | cypress"
+  },
+  {
+    "company_id": "OC-068",
+    "slug": "soaring-aerospace",
+    "name": "Soaring Aerospace",
+    "search_text": "soaring aerospace | aerospace & space | aerospace / autonomous uas | heavy-lift autonomous uas developer and caltech spinout. | autonomy; aerospace systems; systems engineering; mission hardware | aerospace | systems engineering aerospace systems mission hardware autonomy | orange"
+  },
+  {
+    "company_id": "OC-069",
+    "slug": "solid-energies",
+    "name": "Solid Energies",
+    "search_text": "solid energies | energy & grid | battery technology | solid-state battery developer with pilot manufacturing capability. | solid-state batteries; battery cell development; pilot manufacturing; energy storage; battery systems | pilot manufacturing | energy & grid | pilot manufacturing battery systems energy storage battery cell development solid-state batteries | anaheim"
+  },
+  {
+    "company_id": "OC-070",
+    "slug": "spacedock",
+    "name": "Spacedock",
+    "search_text": "spacedock | aerospace & space | space infrastructure | modular docking/assembly interfaces for robotic in-space construction and servicing. | in-space assembly interfaces; docking interfaces; modular space infrastructure; robotic servicing interfaces; rf systems; space infrastructure | space | docking interfaces in-space assembly interfaces modular space infrastructure space infrastructure rf systems robotic servicing interfaces | garden grove"
+  },
+  {
+    "company_id": "OC-071",
+    "slug": "squid3-space",
+    "name": "SQUID3 Space",
+    "search_text": "squid3 space | aerospace & space | space / thermal materials | thermal-control materials and systems for spacecraft. | spacecraft thermal control; thermal-control materials; spacecraft materials; spacecraft systems; advanced materials | space | advanced materials spacecraft materials thermal-control materials spacecraft systems spacecraft thermal control | irvine"
+  },
+  {
+    "company_id": "OC-072",
+    "slug": "strawberry-robotics",
+    "name": "Strawberry Robotics",
+    "search_text": "strawberry robotics | robotics & autonomy | agricultural robotics | autonomous robotics for strawberry harvesting and agricultural field work. | robotics; autonomy; mechatronic systems | agriculture | mechatronic systems robotics autonomy | costa mesa"
+  },
+  {
+    "company_id": "OC-073",
+    "slug": "supernal",
+    "name": "Supernal",
+    "search_text": "supernal | aerospace & space | advanced air mobility / evtol | advanced air mobility company developing electric vertical-takeoff aircraft. | evtol aircraft; aircraft systems; aerospace systems; systems engineering | aerospace mobility | systems engineering aerospace systems aircraft systems evtol aircraft | irvine"
+  },
+  {
+    "company_id": "OC-074",
+    "slug": "symbolic-displays",
+    "name": "Symbolic Displays",
+    "search_text": "symbolic displays | aerospace & space | aerospace electronics / displays | avionics displays, panels and keyboards. | display systems; aerospace systems; systems engineering; mission hardware | aerospace | systems engineering aerospace systems display systems mission hardware | santa ana"
+  },
+  {
+    "company_id": "OC-075",
+    "slug": "syndicus-usa-syndicus-aerospace",
+    "name": "Syndicus USA / Syndicus Aerospace",
+    "search_text": "syndicus usa / syndicus aerospace | defense | defense manufacturing | defense manufacturing company with firearms and aerospace/uas development activity. | defense manufacturing; defense systems; mission hardware; systems integration | defense manufacturing | aerospace defense | systems integration defense manufacturing defense systems mission hardware | fullerton"
+  },
+  {
+    "company_id": "OC-076",
+    "slug": "syntiant",
+    "name": "Syntiant",
+    "search_text": "syntiant | semiconductors & electronics | semiconductors / edge ai | edge-ai semiconductor and physical-ai inference technology company. | edge ai semiconductors; ai inference accelerators; low-power neural processing; physical-ai inference; edge ai; semiconductor design | semiconductor r&d, software/application support assembly/test/logistics manufacturing operations through asian facilities | electronics | ai inference accelerators edge ai edge ai semiconductors low-power neural processing physical-ai inference semiconductor design | irvine"
+  },
+  {
+    "company_id": "OC-090",
+    "slug": "tellus-power",
+    "name": "Tellus Power",
+    "search_text": "tellus power | energy & grid | energy hardware / ev charging | builds bidirectional ev charging, battery-storage, microgrid and distributed energy infrastructure. | bidirectional ev charging; battery energy storage; microgrids; power electronics; distributed energy systems; battery systems; grid hardware | energy utilities / grid | battery energy storage battery systems bidirectional ev charging distributed energy systems grid hardware microgrids power electronics | irvine"
+  },
+  {
+    "company_id": "OC-077",
+    "slug": "terran-orbital",
+    "name": "Terran Orbital",
+    "search_text": "terran orbital | aerospace & space | spacecraft manufacturing | satellite manufacturer and space-solutions company. | satellite manufacturing; spacecraft buses; satellite integration; mission systems; spacecraft systems; satellite systems | satellite manufacturing | space | satellite integration satellite manufacturing mission systems satellite systems spacecraft buses spacecraft systems | irvine"
+  },
+  {
+    "company_id": "OC-078",
+    "slug": "therabot",
+    "name": "Therabot",
+    "search_text": "therabot | other hard tech | consumer health hardware / recovery | hardware products for massage and physical recovery. | hard-tech product development; physical systems; systems engineering | other hard tech | hard-tech product development systems engineering physical systems | irvine"
+  },
+  {
+    "company_id": "OC-092",
+    "slug": "thomas-global-systems",
+    "name": "Thomas Global Systems",
+    "search_text": "thomas global systems | aerospace & space | aerospace / defense electronics | designs, manufactures and supports avionics, mission electronics, electro-optic assemblies and related aerospace/defense systems. | avionics electronics; mission electronics; electro-optic assemblies; aerospace electronics manufacturing | aerospace electronics manufacturing | aerospace defense | aerospace electronics manufacturing avionics electronics electro-optic assemblies mission electronics | irvine"
+  },
+  {
+    "company_id": "OC-079",
+    "slug": "tomi-engineering",
+    "name": "TOMI Engineering",
+    "search_text": "tomi engineering | aerospace & space | precision manufacturing / aerospace | as9100/itar cnc machining and assembly for aerospace, defense and space. | 3-axis cnc machining; 4-axis cnc machining; 5-axis cnc machining; hard-metal machining; assembly; dfm / npi engineering; cnc machining | 3-axis cnc machining 4-axis cnc machining 5-axis cnc machining hard-metal machining assembly cnc machining | aerospace space defense | dfm / npi engineering 3-axis cnc machining 4-axis cnc machining 5-axis cnc machining assembly cnc machining hard-metal machining | santa ana"
+  },
+  {
+    "company_id": "OC-080",
+    "slug": "trl11",
+    "name": "TRL11",
+    "search_text": "trl11 | aerospace & space | space imaging / payloads | visual-intelligence and video payload systems for space. | space imaging payloads; video payload systems; visual intelligence; spaceborne sensing | space imaging payloads electro-optical systems aerospace electronics and machine-vision hardware | space | space imaging payloads video payload systems spaceborne sensing visual intelligence | irvine"
+  },
+  {
+    "company_id": "OC-081",
+    "slug": "ts-conductor",
+    "name": "TS Conductor",
+    "search_text": "ts conductor | energy & grid | grid hardware / advanced conductors | next-generation electric transmission conductors for grid capacity expansion. | advanced power conductors; grid transmission hardware; high-capacity conductors; grid modernization; grid hardware | utilities / grid | advanced power conductors grid hardware grid transmission hardware grid modernization high-capacity conductors | huntington beach"
+  },
+  {
+    "company_id": "OC-097",
+    "slug": "ttm-technologies",
+    "name": "TTM Technologies",
+    "search_text": "ttm technologies | semiconductors & electronics | electronics manufacturing / pcb / rf | global manufacturer of advanced pcbs, rf components, microelectronic assemblies and mission systems. | pcb manufacturing; rf components; microelectronic assemblies; mission systems electronics; rf systems | pcb manufacturing microelectronic assemblies | semiconductors & electronics | microelectronic assemblies pcb manufacturing mission systems electronics rf components rf systems | santa ana"
+  },
+  {
+    "company_id": "OC-082",
+    "slug": "turion-space",
+    "name": "Turion Space",
+    "search_text": "turion space | aerospace & space | space infrastructure / ssa | space-domain-awareness spacecraft, sensors and in-space servicing systems. | space-domain awareness; spacecraft; in-space servicing; satellite sensing; space operations; spacecraft systems; space infrastructure | space | space operations in-space servicing space infrastructure spacecraft spacecraft systems satellite sensing space-domain awareness | irvine"
+  },
+  {
+    "company_id": "OC-083",
+    "slug": "vinmotion",
+    "name": "VinMotion",
+    "search_text": "vinmotion | robotics & autonomy | humanoid robotics / physical ai | humanoid robotics and physical-ai company. | robotics; physical ai; autonomy; mechatronic systems | robotics & autonomy | mechatronic systems robotics autonomy physical ai | cypress"
+  },
+  {
+    "company_id": "OC-084",
+    "slug": "virgin-galactic",
+    "name": "Virgin Galactic",
+    "search_text": "virgin galactic | aerospace & space | spaceflight / aerospace | commercial human-spaceflight company with orange county operations. | aerospace systems; systems engineering; mission hardware | aerospace | systems engineering aerospace systems mission hardware | tustin"
+  },
+  {
+    "company_id": "OC-085",
+    "slug": "volund-manufacturing",
+    "name": "Volund Manufacturing",
+    "search_text": "volund manufacturing | aerospace & space | aerospace propulsion / manufacturing | low-cost turbine propulsion systems and automated manufacturing methods for defense/aerospace. | turbine propulsion; propulsion manufacturing; automated manufacturing; mil-spec propulsion systems; propulsion systems | propulsion manufacturing | aerospace | propulsion manufacturing mil-spec propulsion systems propulsion systems automated manufacturing turbine propulsion | huntington beach"
+  },
+  {
+    "company_id": "OC-086",
+    "slug": "west-coast-solutions",
+    "name": "West Coast Solutions",
+    "search_text": "west coast solutions | aerospace & space | space electronics / power | space and aerospace electronics, cryogenics, and space/tactical power systems. | space power electronics; cryogenic systems; tactical power systems; space electronics | aerospace space | cryogenic systems tactical power systems space electronics space power electronics | huntington beach"
+  },
+  {
+    "company_id": "OC-087",
+    "slug": "xcelerium",
+    "name": "Xcelerium",
+    "search_text": "xcelerium | semiconductors & electronics | semiconductors / edge ai | fabless semiconductor company for edge ai, wireless, radar and computer vision. | edge ai; semiconductor design; wireless systems; electronic hardware | electronics | electronic hardware edge ai semiconductor design wireless systems | irvine"
+  }
+]

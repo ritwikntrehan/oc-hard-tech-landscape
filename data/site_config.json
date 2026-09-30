@@ -1,0 +1,26 @@
+{
+  "site_title": "Orange County Hard Tech Landscape",
+  "dataset_version": "oc-hardtech-web-v1.0-2026-09-30",
+  "geographic_scope": "Orange County, California",
+  "default_map_view": {
+    "latitude": 33.72,
+    "longitude": -117.82,
+    "zoom": 9
+  },
+  "feature_flags": {
+    "map": true,
+    "filters": true,
+    "company_profiles": true,
+    "capability_explorer": true,
+    "activity_feed": true,
+    "llm_interface": true,
+    "show_internal_quality_page": false
+  },
+  "important_notes": [
+    "V1 map coordinates are deterministic Orange County city centroids, not facility-level coordinates.",
+    "Exact street addresses are retained separately where verified.",
+    "Unknown financial values are null, not zero.",
+    "VinMotion and Therabot require current Orange County location re-verification.",
+    "This is a curated intelligence dataset, not an exhaustive registry of every Orange County hard-tech company."
+  ]
+}
