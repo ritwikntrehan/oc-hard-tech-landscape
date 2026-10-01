@@ -1,0 +1,57 @@
+[
+  {
+    "snapshot_id": "FIN-001",
+    "company_id": "OC-009",
+    "company_name": "Anduril Industries",
+    "as_of_date": "2026-05-13",
+    "metric": "valuation",
+    "value_usd": 61000000000,
+    "basis": "Series H post-money valuation",
+    "source_url": "https://techcrunch.com/2026/05/13/anduril-raises-5b-doubles-valuation-to-61b/",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-002",
+    "company_id": "OC-009",
+    "company_name": "Anduril Industries",
+    "as_of_date": "2025",
+    "metric": "revenue",
+    "value_usd": 2200000000,
+    "basis": "2025 revenue reported by CEO in funding coverage",
+    "source_url": "https://techcrunch.com/2026/05/13/anduril-raises-5b-doubles-valuation-to-61b/",
+    "confidence": "Medium"
+  },
+  {
+    "snapshot_id": "FIN-003",
+    "company_id": "OC-044",
+    "company_name": "Mach Industries",
+    "as_of_date": "2026-09-10",
+    "metric": "valuation",
+    "value_usd": 3700000000,
+    "basis": "Series C extension valuation",
+    "source_url": "https://www.prnewswire.com/news-releases/mach-industries-raises-additional-600-million-to-scale-defense-manufacturing-302874488.html",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-004",
+    "company_id": "OC-028",
+    "company_name": "FieldAI",
+    "as_of_date": "2025-08-20",
+    "metric": "valuation",
+    "value_usd": 2000000000,
+    "basis": "Post-money valuation reported with 2025 financing",
+    "source_url": "https://www.axios.com/2025/08/20/fieldai-raises-over-400-million-to-make-robot-brains",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-005",
+    "company_id": "OC-076",
+    "company_name": "Syntiant",
+    "as_of_date": "2023",
+    "metric": "acquired_business_revenue",
+    "value_usd": 256000000,
+    "basis": "FY2023 revenue of acquired Knowles Consumer MEMS Microphone business, not Syntiant standalone revenue",
+    "source_url": "https://www.syntiant.com/press-release/syntiant-completes-acquisition-of-knowles-consumer-mems-microphone-division/",
+    "confidence": "High"
+  }
+]

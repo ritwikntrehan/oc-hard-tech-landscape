@@ -1,16 +1,16 @@
 {
   "dataset": "Orange County Hard Tech Landscape",
-  "dataset_version": "oc-hardtech-web-v1.0-2026-09-30",
-  "frozen_as_of": "2026-09-30",
+  "dataset_version": "oc-hardtech-web-v1.4-2026-10-01",
+  "frozen_as_of": "2026-10-01",
   "source_workbook": "oc_hardtech_enriched_v4.xlsx",
   "scope": "Orange County, California",
   "counts": {
     "company_count": 100,
     "map_point_count": 107,
     "capability_link_count": 449,
-    "product_count": 100,
-    "event_count": 35,
-    "source_count": 291,
+    "product_count": 112,
+    "event_count": 39,
+    "source_count": 311,
     "unique_slugs": 100,
     "orphan_locations": 0,
     "orphan_capabilities": 0,
@@ -22,60 +22,100 @@
   },
   "coverage": {
     "founded_year": 78,
-    "employee_data": 74,
-    "ownership": 67,
-    "leadership": 60,
-    "manufacturing_process": 45,
-    "public_capital": 25,
-    "government_signal": 11,
-    "hiring_signal": 21,
-    "two_plus_sources": 84,
-    "exact_street_address": 86
+    "employee_data": 78,
+    "ownership": 74,
+    "leadership": 67,
+    "manufacturing_process": 53,
+    "public_capital": 21,
+    "government_signal": 14,
+    "hiring_signal": 24,
+    "two_plus_sources": 89,
+    "exact_street_address": 85
   },
   "known_reverification_flags": [
-    "VinMotion current OC presence",
-    "Therabot current OC presence"
+    "Therabot current OC presence",
+    "VinMotion exact Cypress facility address"
   ],
   "files": {
-    "README.md": {
-      "bytes": 2116,
-      "sha256": "34d0f7c0cb779c303c9108af75e6f01830ffbe7899df3b8dd6dcf992e030738e"
+    ".env.example": {
+      "bytes": 101,
+      "sha256": "90c3ee6b151ab2936e17523d1a81d6dd6664ecd515e47261c733f4c28b8be423"
     },
-    "data/companies.json": {
-      "bytes": 658224,
-      "sha256": "61e24217a6cf5e11a7ae5dabbd85ebc1879017900822ba74e09e0de391cac4a1"
+    "ARCHITECTURE.md": {
+      "bytes": 558,
+      "sha256": "d2829c29eda5a479e84b92c6cb60bf6d7cf0b3308cd0d4173781e6e60c1a6356"
+    },
+    "DEPLOY_RENDER.md": {
+      "bytes": 1028,
+      "sha256": "376fbc38c454ea9412a25ac12c2bd0d22a4bde47e660c7140e22843fa7ef8548"
+    },
+    "DESIGN_PASS_V1_1.md": {
+      "bytes": 1618,
+      "sha256": "d037d40b717799f32da217ac5ccd1c0bfce4aad20b54c670d3425ab74c23857d"
+    },
+    "PUBLIC_INTELLIGENCE_PASS_V1_2.md": {
+      "bytes": 1657,
+      "sha256": "5632b73091267ff47cedb7fea4d780f4c8674fcce6414b7fe171bf7e9cf63632"
+    },
+    "README.md": {
+      "bytes": 649,
+      "sha256": "3f1967a549609f5a7101e7e5395aec8f70e89c17706987bc370d3cffe5a8fe82"
+    },
+    "UX_PASS_V1_3.md": {
+      "bytes": 1389,
+      "sha256": "68f8797c7484d569f4e7b2add0edbee5e612dd54a995e554f6d3c06c4f665428"
+    },
+    "app.js": {
+      "bytes": 55784,
+      "sha256": "eedb8e3512503b24e0a480746e289b38113c01d250191dc003c26d05376bce7d"
     },
     "data/companies.min.json": {
-      "bytes": 501630,
-      "sha256": "666ac39d6ec3d3f5ff8075aead363a94a01ab300a86edf837debb0db283cd1c1"
+      "bytes": 513938,
+      "sha256": "7525d921a07344a4dfb6bceedce0b6387279f182968e5603eed4478738d37475"
     },
     "data/facets.json": {
-      "bytes": 12132,
-      "sha256": "9b5b2a0188b60f28358cf3c510bb8f21bd60bfdf56ef3a45ac045937cb57b9f0"
+      "bytes": 12300,
+      "sha256": "a33f3a949d66abde8bf514cc02540a9e806559b9a1a7495340ae1879415a4f8f"
     },
     "data/map_points.json": {
-      "bytes": 50022,
-      "sha256": "871865079ab47a7a4037b8c95af88cc9abff7995ac482508e13b85eaed9bba80"
+      "bytes": 49959,
+      "sha256": "6a5fed2a6fee8bf60cfccb445df05e4dbab53673ae1e1e26e56b5e848f2bc35b"
     },
     "data/search_index.json": {
-      "bytes": 51627,
-      "sha256": "e86126198c9281e60daddd39c4c8f14be2feafc47fec720e420ec1ba2dce2874"
+      "bytes": 58069,
+      "sha256": "38d7305751875c721d11691c8dca0a938d7dc13b9f0df557b8290be868ca0c11"
     },
     "data/site_config.json": {
       "bytes": 932,
       "sha256": "0331c159cd057a5803ef4b7fd003b6e32741048c8c60ea481e6139c7c6ae0c1b"
     },
     "data/source_ledger.csv": {
-      "bytes": 51331,
-      "sha256": "03b627dd6cdfbc2adf46eb5dc27bfaa8fa9bed97ce7ff584287381bfbc7a313c"
+      "bytes": 55273,
+      "sha256": "85d3b038b96a803feaacd5129f24a1946d6c06ec1478448a69b89ed680aeb114"
     },
-    "llm/company_context.ndjson": {
-      "bytes": 224170,
-      "sha256": "7c54dd2d26f65a31dd227df1d413e9d5de3b9f008ecbdbb94ca2002b38f4efd9"
+    "index.html": {
+      "bytes": 16478,
+      "sha256": "db43980c87c2347055cb77596f5fb1884cac91c3f9f87938cf7b320b112ba9ac"
     },
-    "schema/company.schema.json": {
-      "bytes": 1161,
-      "sha256": "10be9a9fadf40484b2a6f04c122ee883bae1df213b0c0609cd4679ba344adab5"
+    "main.py": {
+      "bytes": 14632,
+      "sha256": "f776f35c6de158b3ae4e06435a98958c9af0c3e628ec342762dc959cbb972177"
+    },
+    "render.yaml": {
+      "bytes": 582,
+      "sha256": "5b2d779d8a7f8161d8711c3c988daf3784afd0bc328d6eac15458d887aa51604"
+    },
+    "requirements.txt": {
+      "bytes": 74,
+      "sha256": "c8dcfe93a957849ae781b99d47df92c3553a38b1295a54efaa17c023e28f7be0"
+    },
+    "serve.ps1": {
+      "bytes": 114,
+      "sha256": "8610b1a7cd712903c11fbfe769bcf8076eb70f1a3dab4f314168a0403c56fa32"
+    },
+    "styles.css": {
+      "bytes": 33118,
+      "sha256": "8d1c1a712560e273fc353eb3aff89c754d6847c7d4d4266919c05d00aed919d1"
     }
   }
 }

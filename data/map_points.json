@@ -341,7 +341,7 @@
     "company_slug": "comtech-space-components-and-antennas",
     "company_name": "Comtech Space Components and Antennas",
     "sector_group": "Aerospace & Space",
-    "maturity": "Unclassified",
+    "maturity": "Strategic business unit",
     "city": "Cypress",
     "address": "6181 Chip Ave, Cypress, CA 90630",
     "latitude": 33.818315,
@@ -610,9 +610,9 @@
     "maturity": "Emerging",
     "city": "Orange",
     "address": null,
-    "latitude": 33.802945,
-    "longitude": -117.832506,
-    "coordinate_basis": "Orange County city centroid (not facility-level coordinate)",
+    "latitude": 33.81,
+    "longitude": -117.86,
+    "coordinate_basis": "Company-published HQ coordinates",
     "qa_status": "PASS"
   },
   {
@@ -1341,7 +1341,7 @@
     "latitude": 33.684065,
     "longitude": -117.792581,
     "coordinate_basis": "Orange County city centroid (not facility-level coordinate)",
-    "qa_status": "PASS"
+    "qa_status": "REVERIFY"
   },
   {
     "location_id": "LOC-098",
@@ -1435,11 +1435,11 @@
     "sector_group": "Robotics & Autonomy",
     "maturity": "Unclassified",
     "city": "Cypress",
-    "address": "10741 Walker Street, Suite 500, Cypress, CA 90630",
+    "address": null,
     "latitude": 33.818315,
     "longitude": -118.039045,
     "coordinate_basis": "Orange County city centroid (not facility-level coordinate)",
-    "qa_status": "PASS"
+    "qa_status": "REVERIFY"
   },
   {
     "location_id": "LOC-081",

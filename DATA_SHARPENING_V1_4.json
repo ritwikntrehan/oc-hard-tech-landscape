@@ -1,0 +1,38 @@
+{
+  "version": "1.4",
+  "date": "2026-10-01",
+  "scope": "Product-driven data sharpening batch",
+  "companies_enriched": [
+    "Comtech Space Components and Antennas",
+    "HawkRobo",
+    "Ryvid",
+    "HopAero",
+    "Creabot",
+    "Makani Science",
+    "Soaring Aerospace",
+    "VinMotion",
+    "Therabot"
+  ],
+  "counts_after": {
+    "companies": 100,
+    "locations_mapped": 107,
+    "capability_links": 449,
+    "products": 112,
+    "events": 39,
+    "sources": 311,
+    "manufacturing_process_detail": 53,
+    "leadership": 67,
+    "ownership": 74,
+    "employee_data": 78,
+    "capital_records": 21,
+    "government_signals": 14,
+    "hiring_signals": 24,
+    "two_plus_sources": 89,
+    "exact_street_addresses": 85
+  },
+  "integrity_changes": [
+    "VinMotion exact Cypress street address removed because current reviewed sources did not support that precision; Cypress city presence retained as re-verification.",
+    "Therabot remains a map-provenance seed but OC location is explicitly marked REVERIFY / Low confidence.",
+    "Ryvid founding year remains blank because current public sources conflict between 2020 and 2021."
+  ]
+}

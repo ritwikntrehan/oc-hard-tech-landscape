@@ -1,0 +1,312 @@
+[
+  {
+    "entity_id": "ENT-001",
+    "name": "Founders Fund",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-002",
+    "name": "Thrive Capital",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-003",
+    "name": "Andreessen Horowitz",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-004",
+    "name": "Infinite Capital",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-005",
+    "name": "Ribbit Capital",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-006",
+    "name": "Bedrock Capital",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-007",
+    "name": "Sequoia Capital",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-008",
+    "name": "Khosla Ventures",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-009",
+    "name": "Bezos Expeditions",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-010",
+    "name": "Prysm",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-011",
+    "name": "Temasek",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-012",
+    "name": "BHP Ventures",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-013",
+    "name": "Canaan Partners",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-014",
+    "name": "Emerson Collective",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-015",
+    "name": "Intel Capital",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-016",
+    "name": "NVentures",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-017",
+    "name": "Gates Frontier",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-018",
+    "name": "Samsung",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-019",
+    "name": "Capricorn Technology Impact Fund",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-020",
+    "name": "Leitmotif",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-021",
+    "name": "FedEx",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-022",
+    "name": "THOR Industries",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-023",
+    "name": "Washington Harbour Partners",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-024",
+    "name": "Aurelia Foundry",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-025",
+    "name": "Forward Deployed VC",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-026",
+    "name": "FoundersX",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-027",
+    "name": "Center15 Capital",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-028",
+    "name": "Magnetar",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-029",
+    "name": "HOF Capital",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-030",
+    "name": "Industrious Ventures",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-031",
+    "name": "Corning",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-032",
+    "name": "Microsemi",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-033",
+    "name": "Vertical Venture Partners",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-034",
+    "name": "Future Shape",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-035",
+    "name": "Fidelity Management & Research Company",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-036",
+    "name": "DBL Partners",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-037",
+    "name": "Adage Capital Management",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-038",
+    "name": "Standard Investments",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-039",
+    "name": "Paladin Capital Group",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-040",
+    "name": "Piva Capital",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-041",
+    "name": "PeopleFund",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-042",
+    "name": "Root Ventures",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-043",
+    "name": "Squadra Ventures",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-044",
+    "name": "Marlinspike",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-045",
+    "name": "First In",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-046",
+    "name": "Output Ventures",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-047",
+    "name": "ARCHIMED",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-048",
+    "name": "Cerberus Ventures",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-049",
+    "name": "Pinegrove Venture Partners",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-050",
+    "name": "Lux Capital",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-051",
+    "name": "OTB Ventures",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-052",
+    "name": "Seraphim Space",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-053",
+    "name": "Trucks Venture Capital",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-054",
+    "name": "Initialized Capital",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-055",
+    "name": "Nova Threshold",
+    "entity_type": "Investor"
+  },
+  {
+    "entity_id": "ENT-056",
+    "name": "U.S. Marine Corps",
+    "entity_type": "Government agency"
+  },
+  {
+    "entity_id": "ENT-057",
+    "name": "NATO Communications and Information Agency",
+    "entity_type": "Government / alliance agency"
+  },
+  {
+    "entity_id": "ENT-058",
+    "name": "U.S. Space Force / Space Systems Command",
+    "entity_type": "Government agency"
+  },
+  {
+    "entity_id": "ENT-059",
+    "name": "NASA",
+    "entity_type": "Government agency"
+  },
+  {
+    "entity_id": "ENT-060",
+    "name": "U.S. Navy",
+    "entity_type": "Government agency"
+  },
+  {
+    "entity_id": "ENT-061",
+    "name": "Knowles Consumer MEMS Microphone business",
+    "entity_type": "Acquired business"
+  },
+  {
+    "entity_id": "ENT-062",
+    "name": "Voyager Technologies",
+    "entity_type": "Corporate / supplier"
+  }
+]

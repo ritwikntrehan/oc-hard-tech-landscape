@@ -140,7 +140,9 @@
     "Private / IPO registration filed",
     "Private / PE-backed",
     "Public",
+    "Public Company",
     "Public company",
+    "Public-company business unit",
     "Public-company subsidiary",
     "Subsidiary",
     "Subsidiary / business unit",
@@ -413,6 +415,7 @@
     "Financing / facility scale",
     "Financing / manufacturing scale",
     "Government contract",
+    "Government contract / prototype milestones",
     "Government grant",
     "Government partnership",
     "IPO filing",
@@ -422,7 +425,9 @@
     "Operations / certification",
     "Ownership",
     "Platform formation",
+    "Public-safety deployment",
     "Regulatory / clinical",
+    "Regulatory clearance",
     "Strategic investment"
   ]
 }
