@@ -143,11 +143,26 @@ City-centroid coordinates are not exact facilities.
 Do not invent capabilities, rankings, estimates, customers, contracts, ownership, financial values, or locations.
 Cite only URLs supplied in GROUNDING_DATA.
 If evidence is insufficient, say the field is not currently verified.
-Return valid JSON only:
-{"answer":"1-4 short paragraphs","companies":["company-slug"],"citations":[{"url":"https://...","label":"Company · source type"}]}
+
+Answer style:
+- Maximum 120 words unless the user explicitly asks for detail.
+- Give the direct answer first.
+- Mention only companies that are directly relevant to the question.
+- Do not repeat the same evidence in multiple paragraphs.
+- Do not discuss rejected/less-relevant candidates unless the user asks.
+- Prefer one short paragraph or a compact bullet list.
+- Return valid JSON only.
+
+Response schema:
+{"answer":"concise answer","companies":["company-slug"],"citations":[{"url":"https://...","label":"Company · source type"}]}
 """
 
-def local_fallback(candidates: List[Dict[str, Any]]) -> Dict[str, Any]:
+def local_fallback(
+    candidates: List[Dict[str, Any]],
+    *,
+    configured: bool = False,
+    warning: str | None = None,
+) -> Dict[str, Any]:
     selected = candidates[:6]
     lines, citations, seen = [], [], set()
     for c in selected:
@@ -156,15 +171,37 @@ def local_fallback(candidates: List[Dict[str, Any]]) -> Dict[str, Any]:
         lines.append(f"{c['name']}: " + " · ".join(str(x) for x in descriptors if x))
         for s in c.get("sources") or []:
             url = s.get("url")
-            if not url or url in seen: continue
+            if not url or url in seen:
+                continue
             seen.add(url)
-            citations.append({"url":url,"label":f"{c['name']} · {s.get('type') or 'Source'}"})
-            if len(citations) >= 6: break
-    return {
-        "answer":"The language-model endpoint is not configured. The closest matches in the frozen dataset are:\n\n" + "\n".join(lines),
-        "companies":[c["slug"] for c in selected], "citations":citations,
-        "model":"local-retrieval-only", "local_fallback":True
+            citations.append({"url": url, "label": f"{c['name']} · {s.get('type') or 'Source'}"})
+            if len(citations) >= 6:
+                break
+
+    if configured:
+        intro = (
+            "The language-model request failed, so I’m showing the closest matches "
+            "from the frozen dataset instead:"
+        )
+        model = "local-retrieval-fallback"
+    else:
+        intro = (
+            "The language-model endpoint is not configured. The closest matches "
+            "in the frozen dataset are:"
+        )
+        model = "local-retrieval-only"
+
+    payload = {
+        "answer": intro + "\n\n" + "\n".join(lines),
+        "companies": [c["slug"] for c in selected],
+        "citations": citations,
+        "model": model,
+        "local_fallback": True,
     }
+    if warning:
+        payload["warning"] = warning
+    return payload
+
 
 def allowed_sources(candidates: List[Dict[str, Any]]) -> set[str]:
     urls = set()
@@ -236,12 +273,12 @@ async def ask(req: AskRequest):
                 "companies":[],"citations":[],"model":"dataset-only"}
 
     if not LLM_BASE_URL:
-        return local_fallback(candidates)
+        return local_fallback(candidates, configured=False)
 
     body = {
         "model": LLM_MODEL,
         "temperature": 0.1,
-        "max_tokens": 900,
+        "max_tokens": 350,
         "messages": [
             {"role":"system","content":SYSTEM_PROMPT},
             {"role":"user","content":f"QUESTION:\n{question}\n\nGROUNDING_DATA:\n" +
@@ -272,9 +309,13 @@ async def ask(req: AskRequest):
 
     except Exception as exc:
         print(f"[LLM] fallback triggered: {type(exc).__name__}: {exc}", flush=True)
-        fallback = local_fallback(candidates)
-        fallback["warning"] = f"Model endpoint unavailable: {type(exc).__name__}"
-        return JSONResponse(fallback)
+        return JSONResponse(
+            local_fallback(
+                candidates,
+                configured=True,
+                warning=f"Model endpoint unavailable: {type(exc).__name__}: {exc}",
+            )
+        )
 
     valid_slugs = {c["slug"] for c in candidates}
     valid_urls = allowed_sources(candidates)
