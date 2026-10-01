@@ -53,5 +53,148 @@
     "basis": "FY2023 revenue of acquired Knowles Consumer MEMS Microphone business, not Syntiant standalone revenue",
     "source_url": "https://www.syntiant.com/press-release/syntiant-completes-acquisition-of-knowles-consumer-mems-microphone-division/",
     "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-006",
+    "company_id": "OC-099",
+    "company_name": "Lantronix",
+    "as_of_date": "2026-06-30",
+    "metric": "revenue",
+    "value_usd": 120900000,
+    "basis": "FY2026 net revenue",
+    "source_url": "https://www.lantronix.com/newsroom/press-releases/lantronix-reports-fiscal-fourth-quarter-and-full-year-2026-financial-results/",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-007",
+    "company_id": "OC-099",
+    "company_name": "Lantronix",
+    "as_of_date": "2026-06-30",
+    "metric": "cash",
+    "value_usd": 60000000,
+    "basis": "Fiscal-year-end cash; company reported no debt",
+    "source_url": "https://www.lantronix.com/newsroom/press-releases/lantronix-reports-fiscal-fourth-quarter-and-full-year-2026-financial-results/",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-008",
+    "company_id": "OC-097",
+    "company_name": "TTM Technologies",
+    "as_of_date": "2026-06-29",
+    "metric": "revenue",
+    "value_usd": 1004100000,
+    "basis": "Q2 2026 net sales",
+    "source_url": "https://investors.ttm.com/news-events/press-releases/detail/411/ttm-technologies-inc-reports-second-quarter-2026-results",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-009",
+    "company_id": "OC-097",
+    "company_name": "TTM Technologies",
+    "as_of_date": "2026-06-29",
+    "metric": "backlog",
+    "value_usd": 1700000000,
+    "basis": "Aerospace & defense program backlog, reported as over $1.7B",
+    "source_url": "https://investors.ttm.com/news-events/press-releases/detail/411/ttm-technologies-inc-reports-second-quarter-2026-results",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-010",
+    "company_id": "OC-098",
+    "company_name": "Ducommun",
+    "as_of_date": "2026-07-04",
+    "metric": "revenue",
+    "value_usd": 224500000,
+    "basis": "Q2 2026 net revenue",
+    "source_url": "https://investors.ducommun.com/news-releases/news-release-details/ducommun-incorporated-reports-second-quarter-2026-results",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-011",
+    "company_id": "OC-098",
+    "company_name": "Ducommun",
+    "as_of_date": "2026-07-04",
+    "metric": "backlog",
+    "value_usd": 1200000000,
+    "basis": "Remaining performance obligations, reported at $1.2B",
+    "source_url": "https://investors.ducommun.com/news-releases/news-release-details/ducommun-incorporated-reports-second-quarter-2026-results",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-012",
+    "company_id": "OC-047",
+    "company_name": "Mercury Systems",
+    "as_of_date": "2026-07-03",
+    "metric": "revenue",
+    "value_usd": 984000000,
+    "basis": "FY2026 revenue",
+    "source_url": "https://ir.mrcy.com/index.php/news-releases/news-release-details/mercury-systems-reports-fourth-quarter-and-fiscal-2026-results",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-013",
+    "company_id": "OC-047",
+    "company_name": "Mercury Systems",
+    "as_of_date": "2026-07-03",
+    "metric": "backlog",
+    "value_usd": 1900000000,
+    "basis": "FY2026 year-end backlog, reported as over $1.9B",
+    "source_url": "https://ir.mrcy.com/index.php/news-releases/news-release-details/mercury-systems-reports-fourth-quarter-and-fiscal-2026-results",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-014",
+    "company_id": "OC-039",
+    "company_name": "Karman Space & Defense",
+    "as_of_date": "2026-06-30",
+    "metric": "revenue",
+    "value_usd": 182063000,
+    "basis": "Q2 2026 revenue",
+    "source_url": "https://investors.karman-sd.com/News--Events/press-releases/news-details/2026/Karman-Space--Defense-Reports-Second-Quarter-Fiscal-Year-2026-Financial-Results/default.aspx",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-015",
+    "company_id": "OC-039",
+    "company_name": "Karman Space & Defense",
+    "as_of_date": "2026-06-30",
+    "metric": "backlog",
+    "value_usd": 1300000000,
+    "basis": "Q2 2026 backlog",
+    "source_url": "https://investors.karman-sd.com/News--Events/press-releases/news-details/2026/Karman-Space--Defense-Reports-Second-Quarter-Fiscal-Year-2026-Financial-Results/default.aspx",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-016",
+    "company_id": "OC-084",
+    "company_name": "Virgin Galactic",
+    "as_of_date": "2026-06-30",
+    "metric": "revenue",
+    "value_usd": 100000,
+    "basis": "Q2 2026 revenue",
+    "source_url": "https://www.virgingalactic.com/news/virgin-galactic-announces-second-quarter-2026-financial-results-and-provides-business-update/",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-017",
+    "company_id": "OC-084",
+    "company_name": "Virgin Galactic",
+    "as_of_date": "2026-06-30",
+    "metric": "cash_and_marketable_securities",
+    "value_usd": 286000000,
+    "basis": "Q2 2026 cash, cash equivalents and marketable securities",
+    "source_url": "https://www.virgingalactic.com/news/virgin-galactic-announces-second-quarter-2026-financial-results-and-provides-business-update/",
+    "confidence": "High"
+  },
+  {
+    "snapshot_id": "FIN-018",
+    "company_id": "OC-048",
+    "company_name": "Mobix Labs",
+    "as_of_date": "2026-06-30",
+    "metric": "revenue",
+    "value_usd": 3634000,
+    "basis": "Nine months ended June 30, 2026 net revenue",
+    "source_url": "https://investors.mobixlabs.com/node/9436/html",
+    "confidence": "High"
   }
 ]

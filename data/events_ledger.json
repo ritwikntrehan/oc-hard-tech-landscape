@@ -121,6 +121,18 @@
   },
   {
     "event_id": "LED-0011",
+    "company_id": "OC-098",
+    "company_name": "Ducommun",
+    "event_date": "2026-09-15",
+    "event_type": "Defense program award",
+    "amount_usd": 35000000,
+    "summary": "Received a follow-on award valued above $35M for electronic assemblies supporting the PAC-3 MSE missile platform.",
+    "counterparties": [],
+    "source_url": "https://investors.ducommun.com/news-releases/news-release-details/ducommun-incorporated-announces-follow-award-significant-content",
+    "confidence": "High"
+  },
+  {
+    "event_id": "LED-0012",
     "company_id": "OC-023",
     "company_name": "Ecotune",
     "event_date": "2026-05-20",
@@ -132,7 +144,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0012",
+    "event_id": "LED-0013",
     "company_id": "OC-028",
     "company_name": "FieldAI",
     "event_date": "2026-02",
@@ -144,7 +156,7 @@
     "confidence": "Medium"
   },
   {
-    "event_id": "LED-0013",
+    "event_id": "LED-0014",
     "company_id": "OC-029",
     "company_name": "GKN Aerospace",
     "event_date": "2026",
@@ -156,7 +168,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0014",
+    "event_id": "LED-0015",
     "company_id": "OC-033",
     "company_name": "Harbinger Motors",
     "event_date": "2026-02",
@@ -168,7 +180,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0015",
+    "event_id": "LED-0016",
     "company_id": "OC-034",
     "company_name": "HawkRobo",
     "event_date": "2026-04-13",
@@ -177,18 +189,6 @@
     "summary": "Company reported deployment of its robotic system with the Irvine Police Department.",
     "counterparties": [],
     "source_url": "https://hawkrobo.com/irvine-police-robot-dog/",
-    "confidence": "High"
-  },
-  {
-    "event_id": "LED-0016",
-    "company_id": "OC-035",
-    "company_name": "HopAero",
-    "event_date": "2026-09-30",
-    "event_type": "Financing",
-    "amount_usd": 11000000,
-    "summary": "Raised $11M to accelerate development of the Rook rocket-cargo vehicle.",
-    "counterparties": [],
-    "source_url": "https://payloadspace.com/exclusive-hop-aero-raises-11m-for-suborbital-point-to-point-delivery/",
     "confidence": "High"
   },
   {
@@ -205,6 +205,18 @@
   },
   {
     "event_id": "LED-0018",
+    "company_id": "OC-035",
+    "company_name": "HopAero",
+    "event_date": "2026-09-30",
+    "event_type": "Financing",
+    "amount_usd": 11000000,
+    "summary": "Raised $11M to accelerate development of the Rook rocket-cargo vehicle.",
+    "counterparties": [],
+    "source_url": "https://payloadspace.com/exclusive-hop-aero-raises-11m-for-suborbital-point-to-point-delivery/",
+    "confidence": "High"
+  },
+  {
+    "event_id": "LED-0019",
     "company_id": "OC-094",
     "company_name": "Intellian Technologies",
     "event_date": "2026-06",
@@ -216,7 +228,55 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0019",
+    "event_id": "LED-0020",
+    "company_id": "OC-039",
+    "company_name": "Karman Space & Defense",
+    "event_date": "2026-08-28",
+    "event_type": "Acquisition completed",
+    "amount_usd": 94000000,
+    "summary": "Completed the approximately $94M acquisition of Walker Precision Engineering, establishing a European defense platform.",
+    "counterparties": [],
+    "source_url": "https://investors.karman-sd.com/News--Events/press-releases/news-details/2026/Karman-Space--Defense-Completes-Walker-Acquisition-Establishing-a-Platform-for-Growth-in-European-Defense-Market/default.aspx",
+    "confidence": "High"
+  },
+  {
+    "event_id": "LED-0021",
+    "company_id": "OC-099",
+    "company_name": "Lantronix",
+    "event_date": "2026-05-29",
+    "event_type": "Equity financing",
+    "amount_usd": 30000000,
+    "summary": "Priced an underwritten common-stock offering for approximately $30M in gross proceeds.",
+    "counterparties": [],
+    "source_url": "https://www.lantronix.com/newsroom/press-releases/pricing-30-million-offering-common-stock/",
+    "confidence": "High"
+  },
+  {
+    "event_id": "LED-0022",
+    "company_id": "OC-099",
+    "company_name": "Lantronix",
+    "event_date": "2026-07-07",
+    "event_type": "Acquisition",
+    "amount_usd": 11500000,
+    "summary": "Agreed to acquire Vecima Networks' Industrial IoT business, including Nero Global Tracking, for approximately $11.5M.",
+    "counterparties": [],
+    "source_url": "https://www.lantronix.com/newsroom/press-releases/lantronix-adds-high-margin-arr-and-expands-critical-infrastructure-monitoring-platform-with-acquisition-of-vecima-networks-industrial-iot-business/",
+    "confidence": "High"
+  },
+  {
+    "event_id": "LED-0023",
+    "company_id": "OC-099",
+    "company_name": "Lantronix",
+    "event_date": "2026-07-30",
+    "event_type": "Strategic partnership",
+    "amount_usd": null,
+    "summary": "Announced a collaboration with Swarmer to build a custom compute platform for Group 1 unmanned aerial systems.",
+    "counterparties": [],
+    "source_url": "https://www.lantronix.com/newsroom/press-releases/lantronix-and-swarmer-collaborate-to-create-custom-compute-module-for-group-1-unmanned-aerial-systems/",
+    "confidence": "High"
+  },
+  {
+    "event_id": "LED-0024",
     "company_id": "OC-042",
     "company_name": "Layup Parts",
     "event_date": "2026-06-02",
@@ -228,7 +288,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0020",
+    "event_id": "LED-0025",
     "company_id": "OC-044",
     "company_name": "Mach Industries",
     "event_date": "2026-09-10",
@@ -240,7 +300,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0021",
+    "event_id": "LED-0026",
     "company_id": "OC-045",
     "company_name": "Makani Science",
     "event_date": "2025-03-28",
@@ -252,7 +312,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0022",
+    "event_id": "LED-0027",
     "company_id": "OC-046",
     "company_name": "Menlo Micro",
     "event_date": "2026-08-19",
@@ -264,7 +324,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0023",
+    "event_id": "LED-0028",
     "company_id": "OC-048",
     "company_name": "Mobix Labs",
     "event_date": "2026-07",
@@ -276,7 +336,19 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0024",
+    "event_id": "LED-0029",
+    "company_id": "OC-048",
+    "company_name": "Mobix Labs",
+    "event_date": "2026-09-17",
+    "event_type": "Production order / government program",
+    "amount_usd": 1000000,
+    "summary": "Received a follow-on production order above $1M for RF sensing subsystems supporting a U.S. government threat-detection program.",
+    "counterparties": [],
+    "source_url": "https://investors.mobixlabs.com/news-releases/news-release-details/mobix-labs-secures-1-million-plus-threat-detection-sensor-order",
+    "confidence": "High"
+  },
+  {
+    "event_id": "LED-0030",
     "company_id": "OC-053",
     "company_name": "Oceanbotics",
     "event_date": "2026-09-23",
@@ -288,7 +360,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0025",
+    "event_id": "LED-0031",
     "company_id": "OC-022",
     "company_name": "Ondas Sentinel / DZYNE Technologies",
     "event_date": "2026-07-07",
@@ -300,7 +372,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0026",
+    "event_id": "LED-0032",
     "company_id": "OC-060",
     "company_name": "Rekovar",
     "event_date": "2025",
@@ -312,7 +384,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0027",
+    "event_id": "LED-0033",
     "company_id": "OC-061",
     "company_name": "Renata Medical",
     "event_date": "2026-08-19",
@@ -324,7 +396,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0028",
+    "event_id": "LED-0034",
     "company_id": "OC-066",
     "company_name": "Scientific Applications & Research Associates (SARA)",
     "event_date": "2026-07-30",
@@ -336,7 +408,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0029",
+    "event_id": "LED-0035",
     "company_id": "OC-067",
     "company_name": "Senra Systems",
     "event_date": "2026-07-15",
@@ -348,7 +420,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0030",
+    "event_id": "LED-0036",
     "company_id": "OC-070",
     "company_name": "Spacedock",
     "event_date": "2025",
@@ -360,7 +432,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0031",
+    "event_id": "LED-0037",
     "company_id": "OC-073",
     "company_name": "Supernal",
     "event_date": "2026-05",
@@ -372,7 +444,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0032",
+    "event_id": "LED-0038",
     "company_id": "OC-076",
     "company_name": "Syntiant",
     "event_date": "2026-07-06",
@@ -384,7 +456,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0033",
+    "event_id": "LED-0039",
     "company_id": "OC-090",
     "company_name": "Tellus Power",
     "event_date": "2026-08-04",
@@ -396,7 +468,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0034",
+    "event_id": "LED-0040",
     "company_id": "OC-077",
     "company_name": "Terran Orbital",
     "event_date": "2024",
@@ -408,7 +480,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0035",
+    "event_id": "LED-0041",
     "company_id": "OC-092",
     "company_name": "Thomas Global Systems",
     "event_date": "2026",
@@ -420,7 +492,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0036",
+    "event_id": "LED-0042",
     "company_id": "OC-081",
     "company_name": "TS Conductor",
     "event_date": "2026-05",
@@ -432,7 +504,43 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0037",
+    "event_id": "LED-0043",
+    "company_id": "OC-097",
+    "company_name": "TTM Technologies",
+    "event_date": "2026-01-28",
+    "event_type": "Commercial / defense contract",
+    "amount_usd": 200000000,
+    "summary": "Raytheon awarded TTM a multi-year LTAMDS radar-components agreement with potential value up to $200M.",
+    "counterparties": [],
+    "source_url": "https://investors.ttm.com/news-events/press-releases/detail/398/rtxs-raytheon-awards-ttm-technologies-a-multi-year",
+    "confidence": "High"
+  },
+  {
+    "event_id": "LED-0044",
+    "company_id": "OC-097",
+    "company_name": "TTM Technologies",
+    "event_date": "2026-08-17",
+    "event_type": "Acquisition agreement",
+    "amount_usd": 1100000000,
+    "summary": "Entered a definitive agreement to acquire Epiq Solutions for approximately $1.1B in cash.",
+    "counterparties": [],
+    "source_url": "https://investors.ttm.com/news-events/press-releases/detail/412/ttm-technologies-inc-continues-global-growth-strategy",
+    "confidence": "High"
+  },
+  {
+    "event_id": "LED-0045",
+    "company_id": "OC-097",
+    "company_name": "TTM Technologies",
+    "event_date": "2026-09-30",
+    "event_type": "Acquisition completed",
+    "amount_usd": 1100000000,
+    "summary": "Completed the Epiq Solutions acquisition, expanding software-defined radio, RF and radiation-tolerant compute capabilities.",
+    "counterparties": [],
+    "source_url": "https://investors.ttm.com/sec-filings/all-sec-filings/content/0001193125-26-409136/d147406dex991.htm",
+    "confidence": "High"
+  },
+  {
+    "event_id": "LED-0046",
     "company_id": "OC-082",
     "company_name": "Turion Space",
     "event_date": "2026-04-15",
@@ -444,7 +552,7 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0038",
+    "event_id": "LED-0047",
     "company_id": "OC-084",
     "company_name": "Virgin Galactic",
     "event_date": "2026-08",
@@ -456,7 +564,31 @@
     "confidence": "High"
   },
   {
-    "event_id": "LED-0039",
+    "event_id": "LED-0048",
+    "company_id": "OC-084",
+    "company_name": "Virgin Galactic",
+    "event_date": "2026-08-12",
+    "event_type": "Commercial bookings / financial update",
+    "amount_usd": 50000000,
+    "summary": "Reported an oversubscribed $750k-per-seat expedition tranche adding more than $50M to expected future spaceflight revenue; first commercial flight moved to February 2027.",
+    "counterparties": [],
+    "source_url": "https://www.virgingalactic.com/news/virgin-galactic-announces-second-quarter-2026-financial-results-and-provides-business-update/",
+    "confidence": "High"
+  },
+  {
+    "event_id": "LED-0049",
+    "company_id": "OC-084",
+    "company_name": "Virgin Galactic",
+    "event_date": "2026-Q2",
+    "event_type": "Equity financing",
+    "amount_usd": 134000000,
+    "summary": "Generated $134M in gross proceeds through its at-the-market common-stock offering program during Q2 2026.",
+    "counterparties": [],
+    "source_url": "https://www.virgingalactic.com/news/virgin-galactic-announces-second-quarter-2026-financial-results-and-provides-business-update/",
+    "confidence": "High"
+  },
+  {
+    "event_id": "LED-0050",
     "company_id": "OC-085",
     "company_name": "Volund Manufacturing",
     "event_date": "2026-06-09",
@@ -465,102 +597,6 @@
     "summary": "Raised $12M seed financing to build mil-spec propulsion systems and automated manufacturing capability.",
     "counterparties": [],
     "source_url": "https://newsroom.squadra.vc/volund-manufacturing-secures-12m-in-seed-financing-to-build-mil-spec-propulsion-systems-automated-manufacturing-capabilities/",
-    "confidence": "High"
-  },
-  {
-    "event_id": "LED-0040",
-    "company_id": "OC-009",
-    "company_name": "Anduril Industries",
-    "event_date": "2026-01-15",
-    "event_type": "Government contract",
-    "amount_usd": 23900000,
-    "summary": "U.S. Marine Corps awarded Anduril $23.9M for more than 600 Bolt-M systems.",
-    "counterparties": [
-      "U.S. Marine Corps"
-    ],
-    "source_url": "https://www.anduril.com/news/anduril-awarded-usd23-9-million-contract-for-u-s-marine-corps-organic-precision-fires-light-program",
-    "confidence": "High"
-  },
-  {
-    "event_id": "LED-0041",
-    "company_id": "OC-009",
-    "company_name": "Anduril Industries",
-    "event_date": "2026-07-07",
-    "event_type": "Government contract",
-    "amount_usd": null,
-    "summary": "NCIA selected Anduril Lattice for NATO's Enhanced Air Command and Control Data Platform initiative.",
-    "counterparties": [
-      "NATO Communications and Information Agency"
-    ],
-    "source_url": "https://www.anduril.com/news/anduril-secures-first-nato-contract-lattice-for-eairc2-data-platform-initiative",
-    "confidence": "High"
-  },
-  {
-    "event_id": "LED-0042",
-    "company_id": "OC-009",
-    "company_name": "Anduril Industries",
-    "event_date": "2026-09-29",
-    "event_type": "Strategic partnership",
-    "amount_usd": 60000000,
-    "summary": "Anduril and Voyager announced a strategic weapons and propulsion partnership; Voyager is contracted to supply more than $60M of critical technologies.",
-    "counterparties": [
-      "Voyager Technologies"
-    ],
-    "source_url": "https://www.anduril.com/news/anduril-and-voyager-establish-strategic-partnership-across-advanced-weapons-and-propulsion",
-    "confidence": "High"
-  },
-  {
-    "event_id": "LED-0043",
-    "company_id": "OC-046",
-    "company_name": "Menlo Micro",
-    "event_date": "2026-03-23",
-    "event_type": "Government program milestone",
-    "amount_usd": null,
-    "summary": "Completed Task 4 of the U.S. Navy's 10 MW Advanced Circuit Breaker Development Program.",
-    "counterparties": [
-      "U.S. Navy"
-    ],
-    "source_url": "https://menlomicro.com/newsroom/menlo-micro-achieves-key-milestone-in-u-s-navy-advanced-circuit-breaker-program-validating-scalable-mems-power-switching-leadership",
-    "confidence": "High"
-  },
-  {
-    "event_id": "LED-0044",
-    "company_id": "OC-046",
-    "company_name": "Menlo Micro",
-    "event_date": "2026-06-08",
-    "event_type": "Product launch",
-    "amount_usd": null,
-    "summary": "Launched MM5800 millimeter-wave switching platform covering DC to 70 GHz.",
-    "counterparties": [],
-    "source_url": "https://menlomicro.com/newsroom/menlo-micro-launches-industrys-first-millimeter-wave-switching-platform-for-high-frequency-communication-optical-and-quantum-compute-infrastructures",
-    "confidence": "High"
-  },
-  {
-    "event_id": "LED-0045",
-    "company_id": "OC-076",
-    "company_name": "Syntiant",
-    "event_date": "2024-12-30",
-    "event_type": "Acquisition",
-    "amount_usd": 150000000,
-    "summary": "Completed acquisition of Knowles' Consumer MEMS Microphone business for $150M in cash and stock.",
-    "counterparties": [
-      "Knowles"
-    ],
-    "source_url": "https://www.syntiant.com/press-release/syntiant-completes-acquisition-of-knowles-consumer-mems-microphone-division/",
-    "confidence": "High"
-  },
-  {
-    "event_id": "LED-0046",
-    "company_id": "OC-033",
-    "company_name": "Harbinger Motors",
-    "event_date": "2026-06-10",
-    "event_type": "Strategic investment / defense expansion",
-    "amount_usd": null,
-    "summary": "In-Q-Tel joined as a strategic investor as Harbinger launched Praesidia for unmanned military ground vehicles.",
-    "counterparties": [
-      "In-Q-Tel"
-    ],
-    "source_url": "https://harbingermotors.com/newsroom/harbinger-announces-unmanned-hybrid-electric-vehicle-platform-for-military-applications/",
     "confidence": "High"
   }
 ]

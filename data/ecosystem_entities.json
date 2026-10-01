@@ -308,5 +308,45 @@
     "entity_id": "ENT-062",
     "name": "Voyager Technologies",
     "entity_type": "Corporate / supplier"
+  },
+  {
+    "entity_id": "ENT-063",
+    "name": "Vecima Networks Industrial IoT business",
+    "entity_type": "Acquired business"
+  },
+  {
+    "entity_id": "ENT-064",
+    "name": "Swarmer",
+    "entity_type": "Corporate / software partner"
+  },
+  {
+    "entity_id": "ENT-065",
+    "name": "Raytheon / RTX",
+    "entity_type": "Defense prime / customer"
+  },
+  {
+    "entity_id": "ENT-066",
+    "name": "Epiq Solutions",
+    "entity_type": "Acquired business"
+  },
+  {
+    "entity_id": "ENT-067",
+    "name": "Simmonds Precision Products",
+    "entity_type": "Aerospace / defense customer"
+  },
+  {
+    "entity_id": "ENT-068",
+    "name": "Lockheed Martin PAC-3 program",
+    "entity_type": "Defense program"
+  },
+  {
+    "entity_id": "ENT-069",
+    "name": "Walker Precision Engineering",
+    "entity_type": "Acquired business"
+  },
+  {
+    "entity_id": "ENT-070",
+    "name": "U.S. government threat-detection program",
+    "entity_type": "Government program"
   }
 ]

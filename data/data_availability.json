@@ -156,7 +156,7 @@
     "company_name": "Anduril Industries",
     "slug": "anduril-industries",
     "source_count": 6,
-    "event_count": 4,
+    "event_count": 1,
     "capital_round_count": 2,
     "ecosystem_relationship_count": 6,
     "has_funding_total": false,
@@ -168,7 +168,7 @@
     "has_manufacturing_processes": false,
     "has_government_signal": true,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 75.0
+    "public_data_richness_pct": 69.4
   },
   {
     "company_id": "OC-010",
@@ -478,10 +478,10 @@
     "company_id": "OC-098",
     "company_name": "Ducommun",
     "slug": "ducommun",
-    "source_count": 5,
-    "event_count": 0,
+    "source_count": 7,
+    "event_count": 1,
     "capital_round_count": 0,
-    "ecosystem_relationship_count": 0,
+    "ecosystem_relationship_count": 2,
     "has_funding_total": false,
     "has_latest_round": false,
     "has_valuation": false,
@@ -491,7 +491,7 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 25.0
+    "public_data_richness_pct": 33.3
   },
   {
     "company_id": "OC-095",
@@ -707,7 +707,7 @@
     "company_name": "Harbinger Motors",
     "slug": "harbinger-motors",
     "source_count": 5,
-    "event_count": 2,
+    "event_count": 1,
     "capital_round_count": 2,
     "ecosystem_relationship_count": 7,
     "has_funding_total": true,
@@ -719,7 +719,7 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 72.2
+    "public_data_richness_pct": 69.4
   },
   {
     "company_id": "OC-034",
@@ -858,20 +858,20 @@
     "company_id": "OC-039",
     "company_name": "Karman Space & Defense",
     "slug": "karman-space-defense",
-    "source_count": 4,
-    "event_count": 0,
+    "source_count": 6,
+    "event_count": 1,
     "capital_round_count": 0,
-    "ecosystem_relationship_count": 0,
+    "ecosystem_relationship_count": 1,
     "has_funding_total": false,
     "has_latest_round": false,
     "has_valuation": false,
-    "has_revenue": false,
+    "has_revenue": true,
     "has_employee_data": true,
     "has_leadership": true,
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 41.7
+    "public_data_richness_pct": 55.6
   },
   {
     "company_id": "OC-040",
@@ -915,10 +915,10 @@
     "company_id": "OC-099",
     "company_name": "Lantronix",
     "slug": "lantronix",
-    "source_count": 1,
-    "event_count": 0,
+    "source_count": 5,
+    "event_count": 3,
     "capital_round_count": 0,
-    "ecosystem_relationship_count": 0,
+    "ecosystem_relationship_count": 2,
     "has_funding_total": false,
     "has_latest_round": false,
     "has_valuation": false,
@@ -928,7 +928,7 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 10.4
+    "public_data_richness_pct": 30.6
   },
   {
     "company_id": "OC-042",
@@ -1030,7 +1030,7 @@
     "company_name": "Menlo Micro",
     "slug": "menlo-micro",
     "source_count": 4,
-    "event_count": 3,
+    "event_count": 1,
     "capital_round_count": 2,
     "ecosystem_relationship_count": 12,
     "has_funding_total": false,
@@ -1042,35 +1042,35 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 58.3
+    "public_data_richness_pct": 52.8
   },
   {
     "company_id": "OC-047",
     "company_name": "Mercury Systems",
     "slug": "mercury-systems",
-    "source_count": 5,
+    "source_count": 6,
     "event_count": 0,
     "capital_round_count": 0,
     "ecosystem_relationship_count": 0,
     "has_funding_total": false,
     "has_latest_round": false,
     "has_valuation": false,
-    "has_revenue": false,
+    "has_revenue": true,
     "has_employee_data": true,
     "has_leadership": true,
     "has_manufacturing_processes": true,
     "has_government_signal": true,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 50.0
+    "public_data_richness_pct": 58.3
   },
   {
     "company_id": "OC-048",
     "company_name": "Mobix Labs",
     "slug": "mobix-labs",
-    "source_count": 3,
-    "event_count": 1,
+    "source_count": 5,
+    "event_count": 2,
     "capital_round_count": 0,
-    "ecosystem_relationship_count": 0,
+    "ecosystem_relationship_count": 1,
     "has_funding_total": false,
     "has_latest_round": false,
     "has_valuation": false,
@@ -1078,9 +1078,9 @@
     "has_employee_data": false,
     "has_leadership": false,
     "has_manufacturing_processes": false,
-    "has_government_signal": false,
+    "has_government_signal": true,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 17.4
+    "public_data_richness_pct": 33.3
   },
   {
     "company_id": "OC-049",
@@ -1619,7 +1619,7 @@
     "company_name": "Syntiant",
     "slug": "syntiant",
     "source_count": 4,
-    "event_count": 2,
+    "event_count": 1,
     "capital_round_count": 0,
     "ecosystem_relationship_count": 1,
     "has_funding_total": true,
@@ -1631,7 +1631,7 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 50.0
+    "public_data_richness_pct": 47.2
   },
   {
     "company_id": "OC-090",
@@ -1770,20 +1770,20 @@
     "company_id": "OC-097",
     "company_name": "TTM Technologies",
     "slug": "ttm-technologies",
-    "source_count": 2,
-    "event_count": 0,
+    "source_count": 6,
+    "event_count": 3,
     "capital_round_count": 0,
-    "ecosystem_relationship_count": 0,
+    "ecosystem_relationship_count": 2,
     "has_funding_total": false,
     "has_latest_round": false,
     "has_valuation": false,
-    "has_revenue": false,
+    "has_revenue": true,
     "has_employee_data": true,
     "has_leadership": false,
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 20.8
+    "public_data_richness_pct": 47.2
   },
   {
     "company_id": "OC-082",
@@ -1827,20 +1827,20 @@
     "company_id": "OC-084",
     "company_name": "Virgin Galactic",
     "slug": "virgin-galactic",
-    "source_count": 2,
-    "event_count": 1,
+    "source_count": 3,
+    "event_count": 3,
     "capital_round_count": 0,
     "ecosystem_relationship_count": 0,
     "has_funding_total": false,
     "has_latest_round": false,
     "has_valuation": false,
-    "has_revenue": false,
+    "has_revenue": true,
     "has_employee_data": false,
     "has_leadership": true,
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 15.3
+    "public_data_richness_pct": 31.2
   },
   {
     "company_id": "OC-085",
