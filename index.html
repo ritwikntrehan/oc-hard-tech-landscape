@@ -47,6 +47,16 @@
       </div>
     </section>
 
+    <section class="task-strip" aria-label="Common tasks">
+      <span class="task-strip-label">COMMON TASKS</span>
+      <button data-task="suppliers">Find manufacturers</button>
+      <button data-task="robotics">Robotics / autonomy</button>
+      <button data-task="emerging">Emerging companies</button>
+      <button data-task="government">Government signals</button>
+      <button data-task="activity">Recent activity</button>
+      <button id="shareViewButton" class="task-share">Share current view</button>
+    </section>
+
     <section class="control-shell">
       <div class="search-wrap">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
@@ -66,6 +76,11 @@
         <span>Capability filter</span>
         <button id="activeCapabilityChip" class="filter-chip"></button>
         <button id="clearCapability" class="link-button">clear</button>
+      </div>
+
+      <div id="filterSummary" class="filter-summary">
+        <span id="filterSummaryText">All 100 companies</span>
+        <button id="openQueryFromFilters" class="filter-query-button">Ask about this view</button>
       </div>
     </section>
 

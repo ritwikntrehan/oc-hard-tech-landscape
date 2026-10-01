@@ -107,6 +107,26 @@ function filteredCompanies() {
   return rows;
 }
 
+
+function currentViewLabel() {
+  const parts = [];
+  if (state.sector) parts.push(state.sector);
+  if (state.city) parts.push(state.city);
+  if (state.maturity) parts.push(state.maturity);
+  if (state.ownership) parts.push(state.ownership);
+  if (state.capability) parts.push(state.capability);
+  if (state.search.trim()) parts.push(`search: "${state.search.trim()}"`);
+  return parts.length ? parts.join(" · ") : "All companies";
+}
+
+function renderFilterSummary() {
+  const el = $("filterSummaryText");
+  if (!el) return;
+  const count = filteredCompanies().length;
+  const label = currentViewLabel();
+  el.textContent = `${label} · ${count} ${count === 1 ? "company" : "companies"}`;
+}
+
 function renderCompanyList() {
   const rows = filteredCompanies();
 
@@ -123,7 +143,16 @@ function renderCompanyList() {
   if (!container) return;
 
   if (!rows.length) {
-    container.innerHTML = `<div class="empty-state"><strong>No companies match.</strong>Try widening the filters or clearing the search.</div>`;
+    container.innerHTML = `
+      <div class="empty-state">
+        <strong>No companies match this view.</strong>
+        <span>Try removing one filter, or use Query to ask for a broader capability match.</span>
+        <button class="empty-reset" id="emptyReset">Reset filters</button>
+      </div>`;
+    setTimeout(() => {
+      const reset = $("emptyReset");
+      if (reset) reset.addEventListener("click", () => $("clearFilters").click());
+    }, 0);
     return;
   }
 
@@ -644,6 +673,25 @@ function selectCapability(tag) {
   renderCapabilityBrowser();
 }
 
+
+function relatedCompanies(company, limit = 6) {
+  const caps = new Set((company.capabilities || []).map(x => x.tag).filter(Boolean));
+  return DATA.companies
+    .filter(c => c.id !== company.id)
+    .map(c => {
+      let score = 0;
+      const sharedCaps = (c.capabilities || []).filter(x => caps.has(x.tag)).map(x => x.tag);
+      score += sharedCaps.length * 4;
+      if (c.classification?.sector_group && c.classification.sector_group === company.classification?.sector_group) score += 3;
+      if (c.primary_location?.city && c.primary_location.city === company.primary_location?.city) score += 2;
+      if (c.classification?.maturity && c.classification.maturity === company.classification?.maturity) score += 1;
+      return { company: c, score, sharedCaps };
+    })
+    .filter(x => x.score > 0)
+    .sort((a,b) => b.score - a.score || a.company.name.localeCompare(b.company.name))
+    .slice(0, limit);
+}
+
 function openCompany(slug) {
   const c = DATA.companies.find(x => x.slug === slug);
   if (!c) return;
@@ -700,6 +748,7 @@ function openCompany(slug) {
       <div class="profile-actions">
         ${c.website ? `<a class="primary" href="${esc(c.website)}" target="_blank" rel="noopener noreferrer">Company site ↗</a>` : ""}
         <button class="copy-link" id="copyProfileLink">Copy profile link</button>
+        <button class="copy-link" id="askAboutCompany">Ask about company</button>
       </div>
 
       <div class="profile-summary">${display(c.profile.product_platform_summary || c.profile.capability_summary, "Profile under research.")}</div>
@@ -763,6 +812,21 @@ function openCompany(slug) {
 
       ${events ? `<section class="drawer-section"><h3>Activity</h3>${events}</section>` : ""}
 
+      ${relatedCompanies(c).length ? `
+      <section class="drawer-section">
+        <h3>Related companies</h3>
+        <div class="related-company-list">
+          ${relatedCompanies(c).map(r => `
+            <button class="related-company" data-related-company="${esc(r.company.slug)}">
+              <span>
+                <strong>${esc(r.company.name)}</strong>
+                <small>${display(r.company.primary_location?.city, "OC")} · ${display(r.company.classification?.sector_group, "")}</small>
+              </span>
+              <em>${r.sharedCaps.slice(0,2).map(x => esc(x)).join(" · ") || "same sector / geography"}</em>
+            </button>`).join("")}
+        </div>
+      </section>` : ""}
+
       <section class="drawer-section">
         <h3>Source register</h3>
         <div class="source-list">${sourceLinks || `<span class="muted small">No source links captured.</span>`}</div>
@@ -782,6 +846,17 @@ function openCompany(slug) {
       setView("capabilities");
       setTimeout(() => selectCapability(btn.dataset.drawerCap), 20);
     });
+  });
+
+  document.querySelectorAll("[data-related-company]").forEach(btn => {
+    btn.addEventListener("click", () => openCompany(btn.dataset.relatedCompany));
+  });
+
+  $("askAboutCompany").addEventListener("click", () => {
+    closeDrawer();
+    openAsk();
+    $("askInput").value = `What should I know about ${c.name}? Focus on what it builds, capabilities, location, ownership, capital and recent activity.`;
+    $("askInput").focus();
   });
 
   $("copyProfileLink").addEventListener("click", async () => {
@@ -873,6 +948,7 @@ function restoreURL() {
 
 function renderAll() {
   renderActiveCapability();
+  renderFilterSummary();
   renderCompanyList();
   renderOverview();
   renderMap();
@@ -881,7 +957,68 @@ function renderAll() {
   renderActivity();
 }
 
+
+function applyTask(task) {
+  // Start from a clean analytical context.
+  state.search = "";
+  state.sector = "";
+  state.city = "";
+  state.maturity = "";
+  state.ownership = "";
+  state.capability = "";
+
+  if (task === "suppliers") {
+    state.search = "manufacturing";
+    setView("companies");
+  } else if (task === "robotics") {
+    state.sector = "Robotics & Autonomy";
+    setView("companies");
+  } else if (task === "emerging") {
+    state.maturity = "Emerging";
+    setView("companies");
+  } else if (task === "government") {
+    setView("activity");
+    $("askInput").value = "Which companies have public government contract or grant signals, and what are those signals?";
+  } else if (task === "activity") {
+    setView("activity");
+  }
+
+  $("searchInput").value = state.search;
+  $("sectorFilter").value = state.sector;
+  $("cityFilter").value = state.city;
+  $("maturityFilter").value = state.maturity;
+  $("ownershipFilter").value = state.ownership;
+  syncURL();
+  renderAll();
+}
+
+async function shareCurrentView() {
+  const url = new URL(window.location.href);
+  try {
+    await navigator.clipboard.writeText(url.toString());
+    showToast("Current view link copied");
+  } catch {
+    showToast("Copy the URL from your browser");
+  }
+}
+
+function openQueryForCurrentView() {
+  openAsk();
+  const label = currentViewLabel();
+  $("askInput").value = label === "All companies"
+    ? "Summarize the most useful patterns in the current Orange County hard-tech landscape."
+    : `What should I know about this current view: ${label}?`;
+  $("askInput").focus();
+}
+
 function bindControls() {
+  document.querySelectorAll("[data-task]").forEach(btn => {
+    btn.addEventListener("click", () => applyTask(btn.dataset.task));
+  });
+
+  $("shareViewButton").addEventListener("click", shareCurrentView);
+  $("openQueryFromFilters").addEventListener("click", openQueryForCurrentView);
+
   $("searchInput").addEventListener("input", e => {
     state.search = e.target.value;
     syncURL(); renderAll();
@@ -924,9 +1061,17 @@ function bindControls() {
   $("closeDrawer").addEventListener("click", closeDrawer);
   $("drawerBackdrop").addEventListener("click", closeDrawer);
   document.addEventListener("keydown", e => {
-    if (e.key === "Escape") closeDrawer();
-    if (e.key === "/" && document.activeElement?.tagName !== "INPUT") {
-      e.preventDefault(); $("searchInput").focus();
+    if (e.key === "Escape") {
+      closeDrawer();
+      closeAsk();
+    }
+    if (e.key === "/" && !["INPUT","TEXTAREA","SELECT"].includes(document.activeElement?.tagName)) {
+      e.preventDefault();
+      $("searchInput").focus();
+    }
+    if (e.key.toLowerCase() === "q" && !["INPUT","TEXTAREA","SELECT"].includes(document.activeElement?.tagName)) {
+      e.preventDefault();
+      openQueryForCurrentView();
     }
   });
 

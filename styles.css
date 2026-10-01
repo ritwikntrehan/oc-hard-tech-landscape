@@ -530,3 +530,56 @@ dialog p{color:#4d585d;line-height:1.5;font-size:11px}
   .finance-grid{grid-template-columns:1fr}
   .about-grid-3{grid-template-columns:1fr}
 }
+
+
+/* v1.3 UX pass */
+.task-strip{
+  display:flex;align-items:center;gap:0;border-left:1px solid var(--line);border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);background:#e8e6df;overflow-x:auto
+}
+.task-strip-label{
+  padding:7px 10px;font:700 8px ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.06em;color:#606a6f;white-space:nowrap
+}
+.task-strip button{
+  border:0;border-left:1px solid var(--line);background:transparent;padding:7px 10px;
+  font:600 8px ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;white-space:nowrap
+}
+.task-strip button:hover{background:#dcd9d0}
+.task-strip .task-share{margin-left:auto;color:var(--accent);font-weight:700}
+
+.filter-summary{
+  grid-column:1/-1;display:flex;justify-content:space-between;gap:12px;align-items:center;
+  border-top:1px solid var(--line);padding-top:7px;
+  font:600 8px ui-monospace,SFMono-Regular,Menlo,monospace;color:#667176
+}
+.filter-query-button{
+  border:1px solid var(--line-dark);background:transparent;padding:4px 7px;
+  font:700 8px ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase
+}
+.filter-query-button:hover{background:#e8e5dc}
+
+.related-company-list{display:grid}
+.related-company{
+  width:100%;border:0;border-bottom:1px dotted var(--line);background:transparent;padding:7px 0;
+  display:flex;justify-content:space-between;gap:12px;text-align:left
+}
+.related-company:hover{background:#ece9e1}
+.related-company strong{display:block;font-size:9px}
+.related-company small{display:block;margin-top:2px;color:#778185;font-size:7px}
+.related-company em{
+  max-width:48%;font-style:normal;text-align:right;
+  font:500 7px/1.35 ui-monospace,SFMono-Regular,Menlo,monospace;color:#6e787c
+}
+.empty-state span{display:block;margin-top:4px}
+.empty-reset{
+  margin-top:10px;border:1px solid var(--line-dark);background:transparent;padding:5px 8px;
+  font:700 8px ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase
+}
+.empty-reset:hover{background:#e8e5dc}
+
+@media(max-width:720px){
+  .task-strip-label{display:none}
+  .task-strip .task-share{margin-left:0}
+  .filter-summary{align-items:flex-start;flex-direction:column}
+}
