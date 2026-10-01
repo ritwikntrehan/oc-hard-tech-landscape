@@ -183,11 +183,43 @@ def extract_text(payload: Dict[str, Any]) -> str:
     choices = payload.get("choices") or []
     if choices:
         content = (choices[0].get("message") or {}).get("content")
-        if isinstance(content, str): return content
+        if isinstance(content, str):
+            return content
         if isinstance(content, list):
-            return "".join(x.get("text","") for x in content if isinstance(x, dict))
-    if isinstance(payload.get("output_text"), str): return payload["output_text"]
+            return "".join(x.get("text", "") for x in content if isinstance(x, dict))
+    if isinstance(payload.get("output_text"), str):
+        return payload["output_text"]
     raise ValueError("No text content returned")
+
+
+def parse_model_json(raw: str) -> Dict[str, Any]:
+    """Accept strict JSON, fenced JSON, or a JSON object surrounded by prose."""
+    text = (raw or "").strip()
+
+    # Normal case.
+    try:
+        parsed = json.loads(text)
+        if isinstance(parsed, dict):
+            return parsed
+    except json.JSONDecodeError:
+        pass
+
+    # Common small-model behavior: ```json ... ```
+    fenced = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, flags=re.I | re.S)
+    if fenced:
+        parsed = json.loads(fenced.group(1))
+        if isinstance(parsed, dict):
+            return parsed
+
+    # Last resort: first complete-looking object.
+    start = text.find("{")
+    end = text.rfind("}")
+    if start != -1 and end > start:
+        parsed = json.loads(text[start:end + 1])
+        if isinstance(parsed, dict):
+            return parsed
+
+    raise ValueError("Model returned text but no parseable JSON object")
 
 @app.get("/healthz")
 async def healthz():
@@ -226,9 +258,20 @@ async def ask(req: AskRequest):
     try:
         async with httpx.AsyncClient(timeout=LLM_TIMEOUT) as client:
             r = await client.post(f"{LLM_BASE_URL}/chat/completions", headers=headers, json=body)
-            r.raise_for_status()
-            parsed = json.loads(extract_text(r.json()))
+            if not r.is_success:
+                print(
+                    f"[LLM] provider HTTP {r.status_code}: "
+                    f"{r.text[:1200]}",
+                    flush=True,
+                )
+                r.raise_for_status()
+
+            provider_payload = r.json()
+            raw_text = extract_text(provider_payload)
+            parsed = parse_model_json(raw_text)
+
     except Exception as exc:
+        print(f"[LLM] fallback triggered: {type(exc).__name__}: {exc}", flush=True)
         fallback = local_fallback(candidates)
         fallback["warning"] = f"Model endpoint unavailable: {type(exc).__name__}"
         return JSONResponse(fallback)
