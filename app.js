@@ -17,7 +17,8 @@ const state = {
   view: "explore",
   sort: "name",
   selectedCompany: null,
-  selectedCapability: null
+  selectedCapability: null,
+  eventType: ""
 };
 
 let map;
@@ -253,6 +254,116 @@ function renderActiveCapability() {
   $("activeCapabilityChip").textContent = state.capability;
 }
 
+
+function countBy(items, getter) {
+  const counts = new Map();
+  for (const item of items) {
+    const key = getter(item);
+    if (!key) continue;
+    counts.set(key, (counts.get(key) || 0) + 1);
+  }
+  return [...counts.entries()].sort((a,b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+}
+
+function renderBarList(targetId, rows, total, clickKind = null, limit = 6) {
+  const target = $(targetId);
+  if (!target) return;
+  const shown = rows.slice(0, limit);
+  const max = Math.max(1, ...shown.map(x => x[1]));
+  target.innerHTML = shown.map(([label, value]) => `
+    <div class="bar-row">
+      <button type="button" ${clickKind ? `data-overview-kind="${clickKind}" data-overview-value="${esc(label)}"` : ""}>${esc(label)}</button>
+      <div class="bar-track"><span style="width:${Math.max(4,(value/max)*100)}%"></span></div>
+      <span class="bar-value">${value}</span>
+    </div>`).join("");
+
+  if (clickKind) {
+    target.querySelectorAll("[data-overview-kind]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const value = btn.dataset.overviewValue;
+        if (btn.dataset.overviewKind === "sector") {
+          state.sector = value;
+          $("sectorFilter").value = value;
+        }
+        if (btn.dataset.overviewKind === "city") {
+          state.city = value;
+          $("cityFilter").value = value;
+        }
+        syncURL();
+        renderAll();
+      });
+    });
+  }
+}
+
+function renderOverview() {
+  const rows = filteredCompanies();
+  renderBarList("sectorOverview", countBy(rows, c => c.classification?.sector_group), rows.length, "sector");
+  renderBarList("cityOverview", countBy(rows, c => c.primary_location?.city), rows.length, "city");
+
+  const capital = rows.filter(c =>
+    c.financials?.disclosed_funding_total_usd ||
+    c.financials?.latest_round_usd ||
+    c.financials?.valuation_usd
+  ).length;
+  const gov = rows.filter(c => c.signals?.government_contract_or_grant).length;
+  const hiring = rows.filter(c => c.signals?.hiring).length;
+  const exact = rows.filter(c => c.primary_location?.address).length;
+
+  const el = $("signalOverview");
+  if (el) {
+    el.innerHTML = `
+      <div class="signal-cell"><strong>${capital}</strong><span>capital records</span></div>
+      <div class="signal-cell"><strong>${gov}</strong><span>government signals</span></div>
+      <div class="signal-cell"><strong>${hiring}</strong><span>hiring signals</span></div>
+      <div class="signal-cell"><strong>${exact}</strong><span>street addresses</span></div>`;
+  }
+}
+
+function allEvents() {
+  const events = [];
+  for (const company of DATA.companies) {
+    for (const e of company.events || []) {
+      events.push({
+        ...e,
+        company_slug: company.slug,
+        company_name: company.name,
+        city: company.primary_location?.city,
+        sector: company.classification?.sector_group
+      });
+    }
+  }
+  return events.sort((a,b) => String(b.date || "").localeCompare(String(a.date || "")));
+}
+
+function renderActivity() {
+  const feed = $("activityFeed");
+  if (!feed) return;
+
+  let events = allEvents();
+  if (state.eventType) events = events.filter(e => e.type === state.eventType);
+
+  feed.innerHTML = events.length ? events.map(e => `
+    <div class="activity-entry">
+      <div class="activity-date">${display(e.date, "Undated")}</div>
+      <div>
+        <button type="button" data-activity-company="${esc(e.company_slug)}">
+          <div class="activity-company">${esc(e.company_name)}</div>
+          <div class="activity-type">${display(e.type, "Activity")}</div>
+        </button>
+      </div>
+      <div class="activity-summary">${display(e.summary, "")}</div>
+      <div class="activity-amount">${e.amount_usd ? money(e.amount_usd) : ""}</div>
+    </div>`).join("")
+  : `<div class="empty-state"><strong>No events match.</strong>Clear the event-type filter.</div>`;
+
+  feed.querySelectorAll("[data-activity-company]").forEach(btn => {
+    btn.addEventListener("click", () => openCompany(btn.dataset.activityCompany));
+  });
+
+  renderBarList("eventTypeOverview", countBy(allEvents(), e => e.type), allEvents().length, null, 10);
+}
+
 function renderCapabilityBrowser() {
   const search = $("capabilitySearch").value.trim().toLowerCase();
   const categoryMap = new Map();
@@ -443,7 +554,9 @@ function setView(view) {
   document.querySelectorAll("[data-view]").forEach(btn => btn.classList.toggle("active", btn.dataset.view === view));
   $("exploreView").classList.toggle("hidden", view !== "explore");
   $("capabilitiesView").classList.toggle("hidden", view !== "capabilities");
+  $("activityView").classList.toggle("hidden", view !== "activity");
   if (view === "explore") setTimeout(() => map?.invalidateSize(), 20);
+  if (view === "activity") renderActivity();
 }
 
 function syncURL() {
@@ -477,7 +590,9 @@ function restoreURL() {
 function renderAll() {
   renderActiveCapability();
   renderCompanyList();
+  renderOverview();
   renderMap();
+  renderActivity();
 }
 
 function bindControls() {
@@ -493,6 +608,11 @@ function bindControls() {
 
   $("sortSelect").addEventListener("change", e => {
     state.sort = e.target.value; renderCompanyList();
+  });
+
+  $("eventTypeFilter").addEventListener("change", e => {
+    state.eventType = e.target.value;
+    renderActivity();
   });
 
   $("clearFilters").addEventListener("click", () => {
@@ -569,9 +689,9 @@ async function loadData() {
 // Grounded Ask-the-map interface
 //
 // Production default: POST /api/ask
-// ChatGPT Sites should implement this endpoint server-side and keep OPENAI_API_KEY
-// in a Site secret. Local preview falls back to deterministic retrieval summaries,
-// so the UI can be tested without any API key.
+// Production endpoint: POST /api/ask on the same Render service.
+// The browser sends the question and active filters; the server re-retrieves
+// canonical company records and calls the configured open-weight model endpoint.
 // -----------------------------------------------------------------------------
 
 const ASK_ENDPOINT = window.OC_HARDTECH_ASK_ENDPOINT || "/api/ask";
@@ -898,6 +1018,7 @@ async function boot() {
     populateSelect("cityFilter", DATA.facets.cities || []);
     populateSelect("maturityFilter", DATA.facets.maturity_stages || []);
     populateSelect("ownershipFilter", DATA.facets.ownership_statuses || []);
+    populateSelect("eventTypeFilter", DATA.facets.event_types || []);
 
     $("statCompanies").textContent = DATA.manifest.counts.company_count;
     $("statLocations").textContent = DATA.manifest.counts.map_point_count;
