@@ -24,6 +24,7 @@
 
     <nav class="primary-nav" aria-label="Primary">
       <button class="nav-tab active" data-view="explore">Landscape</button>
+      <button class="nav-tab" data-view="companies">Companies</button>
       <button class="nav-tab" data-view="capabilities">Capabilities</button>
       <button class="nav-tab" data-view="activity">Activity</button>
       <button class="nav-tab nav-query" id="askButton">Query</button>
@@ -42,7 +43,7 @@
         <div><strong id="statLocations">107</strong><span>locations</span></div>
         <div><strong id="statCapabilities">449</strong><span>capability links</span></div>
         <div><strong id="statSources">291</strong><span>sources</span></div>
-        <div><strong>35</strong><span>tracked events</span></div>
+        <div><strong id="statEvents">35</strong><span>tracked events</span></div>
       </div>
     </section>
 
@@ -68,13 +69,14 @@
       </div>
     </section>
 
+    <!-- LANDSCAPE -->
     <section id="exploreView">
       <div class="section-rule">
         <span>01 / LANDSCAPE</span>
         <span><strong id="visibleCompanyCount">100</strong> companies in current view</span>
       </div>
 
-      <section class="overview-grid" aria-label="Landscape summary">
+      <section class="overview-grid overview-grid-4" aria-label="Landscape summary">
         <div class="overview-block">
           <div class="overview-head"><span>Sector distribution</span><span>current view</span></div>
           <div id="sectorOverview" class="bar-list"></div>
@@ -83,13 +85,17 @@
           <div class="overview-head"><span>City concentration</span><span>current view</span></div>
           <div id="cityOverview" class="bar-list"></div>
         </div>
-        <div class="overview-block signal-block">
-          <div class="overview-head"><span>Public signals</span><span>current dataset</span></div>
-          <div id="signalOverview" class="signal-grid"></div>
+        <div class="overview-block">
+          <div class="overview-head"><span>Maturity profile</span><span>current view</span></div>
+          <div id="maturityOverview" class="bar-list"></div>
+        </div>
+        <div class="overview-block">
+          <div class="overview-head"><span>Top capabilities</span><span>current view</span></div>
+          <div id="capabilityOverview" class="bar-list"></div>
         </div>
       </section>
 
-      <section class="workspace">
+      <section class="landscape-grid">
         <div class="map-panel panel">
           <div class="panel-head">
             <div>
@@ -104,39 +110,98 @@
           </div>
         </div>
 
-        <div class="results-panel panel">
-          <div class="panel-head">
-            <div>
-              <div class="section-kicker">COMPANY REGISTER</div>
-              <h2 id="resultsTitle">100 companies</h2>
+        <aside class="landscape-side">
+          <section class="side-panel">
+            <div class="side-panel-head">
+              <span>Public signals</span><span>current view</span>
             </div>
-            <label class="sort-label">
-              <span>Sort</span>
-              <select id="sortSelect">
-                <option value="name">Name</option>
-                <option value="coverage">Data coverage</option>
-                <option value="recent">Recent activity</option>
-                <option value="founded">Founded</option>
-              </select>
-            </label>
-          </div>
-          <div id="companyList" class="company-list" aria-live="polite"></div>
-        </div>
+            <div id="signalOverview" class="signal-grid"></div>
+          </section>
+
+          <section class="side-panel">
+            <div class="side-panel-head">
+              <span>Emerging / growth watchlist</span><span>current view</span>
+            </div>
+            <div id="watchlist" class="compact-list"></div>
+          </section>
+
+          <section class="side-panel">
+            <div class="side-panel-head">
+              <span>Latest activity</span><span>tracked events</span>
+            </div>
+            <div id="latestActivity" class="compact-list"></div>
+          </section>
+        </aside>
       </section>
     </section>
 
+    <!-- COMPANIES -->
+    <section id="companiesView" class="hidden">
+      <div class="section-rule">
+        <span>02 / COMPANIES</span>
+        <span>public company explorer</span>
+      </div>
+
+      <section class="companies-summary">
+        <div>
+          <strong id="companiesCount">100</strong>
+          <span>companies in current view</span>
+        </div>
+        <div>
+          <strong id="companiesWithProcesses">45</strong>
+          <span>with manufacturing-process detail</span>
+        </div>
+        <div>
+          <strong id="companiesWithMultipleSources">84</strong>
+          <span>with 2+ sources</span>
+        </div>
+        <label class="sort-label company-sort">
+          <span>Sort company register</span>
+          <select id="sortSelect">
+            <option value="name">Name</option>
+            <option value="recent">Recent activity</option>
+            <option value="founded">Founded</option>
+            <option value="employees">Employees</option>
+            <option value="sources">Source count</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="company-register panel">
+        <div class="register-head">
+          <span>Company</span>
+          <span>City</span>
+          <span>Sector</span>
+          <span>Founded</span>
+          <span>Employees</span>
+          <span>Ownership</span>
+          <span>Latest activity</span>
+          <span>Sources</span>
+        </div>
+        <div id="companyList" class="company-table" aria-live="polite"></div>
+      </section>
+    </section>
+
+    <!-- CAPABILITIES -->
     <section id="capabilitiesView" class="capability-view hidden">
       <div class="section-rule full-span">
-        <span>02 / CAPABILITIES</span>
+        <span>03 / CAPABILITIES</span>
         <span>company ↔ capability relationships</span>
       </div>
+
+      <section class="capability-summary full-span">
+        <div><strong id="uniqueCapabilityCount">0</strong><span>unique capability tags</span></div>
+        <div><strong id="manufacturingCompanyCount">45</strong><span>companies with process detail</span></div>
+        <div><strong id="capabilityCompanyCount">100</strong><span>companies in current filtered universe</span></div>
+        <div><strong id="capabilityLinkCount">449</strong><span>company-capability relationships</span></div>
+      </section>
 
       <div class="capability-browser panel">
         <div class="panel-head capability-head">
           <div>
             <div class="section-kicker">CAPABILITY INDEX</div>
             <h2>What can Orange County build?</h2>
-            <p>Browse the normalized capability taxonomy and open the companies behind each tag.</p>
+            <p>Browse normalized capabilities and open the companies behind each tag.</p>
           </div>
           <div class="cap-search-wrap"><input id="capabilitySearch" type="search" placeholder="Find capability…" /></div>
         </div>
@@ -148,20 +213,35 @@
         <h2 id="capabilityTitle">Choose a capability</h2>
         <p id="capabilitySubtitle" class="muted">Company matches will appear here.</p>
         <div id="capabilityCompanies" class="capability-company-list"></div>
+        <div id="capabilityCities" class="capability-city-summary"></div>
       </aside>
+
+      <section class="process-index full-span panel">
+        <div class="panel-head">
+          <div>
+            <div class="section-kicker">MANUFACTURING / PROCESS INDEX</div>
+            <h2>Publicly documented processes</h2>
+          </div>
+          <div class="panel-meta">only companies with sourced process detail</div>
+        </div>
+        <div id="processIndex" class="process-table"></div>
+      </section>
     </section>
 
+    <!-- ACTIVITY -->
     <section id="activityView" class="activity-view hidden">
       <div class="section-rule full-span">
-        <span>03 / ACTIVITY</span>
+        <span>04 / ACTIVITY</span>
         <span>financing · facilities · contracts · product · ownership</span>
       </div>
+
+      <section id="activityMetrics" class="activity-metrics full-span"></section>
 
       <div class="activity-main panel">
         <div class="panel-head">
           <div>
             <div class="section-kicker">PUBLIC ACTIVITY LEDGER</div>
-            <h2>Recent company events</h2>
+            <h2>Tracked company events</h2>
           </div>
           <label class="sort-label event-filter-label">
             <span>Event type</span>
@@ -173,12 +253,26 @@
 
       <aside class="activity-side panel">
         <div class="section-kicker">ACTIVITY MIX</div>
-        <h2>35 tracked events</h2>
+        <h2 id="activitySideTitle">Tracked events</h2>
         <div id="eventTypeOverview" class="bar-list activity-bars"></div>
         <div class="activity-note">
-          Public activity coverage is intentionally selective. This ledger is a verified signal layer, not a complete news archive.
+          Public activity coverage is intentionally selective. This is a verified signal layer, not a complete news archive.
         </div>
+
+        <div class="side-subhead">Government signal companies</div>
+        <div id="governmentCompanies" class="compact-list"></div>
       </aside>
+
+      <section class="capital-ledger full-span panel">
+        <div class="panel-head">
+          <div>
+            <div class="section-kicker">CAPITAL</div>
+            <h2>Captured public capital records</h2>
+          </div>
+          <div class="panel-meta">reported public amounts only · not market-complete</div>
+        </div>
+        <div id="capitalTable" class="capital-table"></div>
+      </section>
     </section>
   </main>
 
@@ -243,11 +337,18 @@
       <div><strong>100</strong><span>companies</span></div>
       <div><strong>291</strong><span>sources</span></div>
       <div><strong>449</strong><span>capability links</span></div>
-      <div><strong>2026-09-30</strong><span>freeze date</span></div>
+      <div><strong>35</strong><span>tracked events</span></div>
+    </div>
+
+    <h3 class="about-subhead">Public coverage snapshot</h3>
+    <div class="about-grid about-grid-3">
+      <div><strong>84</strong><span>companies with 2+ sources</span></div>
+      <div><strong>86</strong><span>verified street addresses</span></div>
+      <div><strong>45</strong><span>manufacturing/process records</span></div>
     </div>
     <p class="muted small">
       This is a curated intelligence product, not an exhaustive corporate registry. Blank financial values mean
-      no sufficiently verified public value was captured, not zero.
+      no sufficiently verified public value was captured, not zero. Internal research queues and QA tasking are not exposed publicly.
     </p>
   </dialog>
 

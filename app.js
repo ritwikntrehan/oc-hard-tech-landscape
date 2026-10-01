@@ -95,6 +95,12 @@ function filteredCompanies() {
     if (state.sort === "founded") {
       return (a.profile?.founded_year ?? 9999) - (b.profile?.founded_year ?? 9999) || a.name.localeCompare(b.name);
     }
+    if (state.sort === "employees") {
+      return (b.profile?.employees?.mid ?? -1) - (a.profile?.employees?.mid ?? -1) || a.name.localeCompare(b.name);
+    }
+    if (state.sort === "sources") {
+      return (b.sources?.length ?? 0) - (a.sources?.length ?? 0) || a.name.localeCompare(b.name);
+    }
     return a.name.localeCompare(b.name);
   });
 
@@ -103,41 +109,41 @@ function filteredCompanies() {
 
 function renderCompanyList() {
   const rows = filteredCompanies();
-  $("visibleCompanyCount").textContent = rows.length;
-  $("resultsTitle").textContent = `${rows.length} ${rows.length === 1 ? "company" : "companies"}`;
+
+  if ($("visibleCompanyCount")) $("visibleCompanyCount").textContent = rows.length;
+  if ($("companiesCount")) $("companiesCount").textContent = rows.length;
+  if ($("companiesWithProcesses")) {
+    $("companiesWithProcesses").textContent = rows.filter(c => (c.profile?.manufacturing_processes || []).length).length;
+  }
+  if ($("companiesWithMultipleSources")) {
+    $("companiesWithMultipleSources").textContent = rows.filter(c => (c.sources || []).length >= 2).length;
+  }
 
   const container = $("companyList");
+  if (!container) return;
+
   if (!rows.length) {
     container.innerHTML = `<div class="empty-state"><strong>No companies match.</strong>Try widening the filters or clearing the search.</div>`;
     return;
   }
 
   container.innerHTML = rows.map(c => {
-    const caps = (c.capabilities || []).slice(0, 3);
-    const coverage = c.completeness?.coverage_pct ?? 0;
+    const latest = c.latest_event
+      ? `${display(c.latest_event.date, "")}${c.latest_event.type ? ` · ${esc(c.latest_event.type)}` : ""}`
+      : "—";
     return `
-      <button class="company-card" data-company="${esc(c.slug)}">
-        <div class="company-card-top">
-          <div>
-            <h4>${esc(c.name)}</h4>
-            <div class="tag-row" style="margin-top:5px">
-              <span class="tag accent">${display(c.classification.sector_group, "Hard tech")}</span>
-              ${c.classification.maturity ? `<span class="tag">${esc(c.classification.maturity)}</span>` : ""}
-            </div>
-          </div>
-          <span class="city">${display(c.primary_location.city, "OC")}</span>
-        </div>
-        <p>${display(c.profile.product_platform_summary || c.profile.capability_summary, "Company profile under research.")}</p>
-        <div class="tag-row">
-          ${caps.map(x => `<span class="tag">${esc(x.tag)}</span>`).join("")}
-        </div>
-        <div class="card-footer">
-          <span>${c.profile.founded_year ? `Founded ${esc(c.profile.founded_year)}` : "Founded year not verified"}</span>
-          <span title="${coverage}% data coverage">
-            ${Math.round(coverage)}%
-            <span class="coverage-bar"><span style="width:${Math.max(0, Math.min(100, coverage))}%"></span></span>
-          </span>
-        </div>
+      <button class="company-table-row" data-company="${esc(c.slug)}">
+        <span class="company-cell-main">
+          <strong>${esc(c.name)}</strong>
+          <small>${display(c.classification.primary_sector, "Hard tech")}</small>
+        </span>
+        <span>${display(c.primary_location.city, "—")}</span>
+        <span>${display(c.classification.sector_group, "—")}</span>
+        <span>${display(c.profile.founded_year, "—")}</span>
+        <span>${display(c.profile.employees?.label, "—")}</span>
+        <span>${display(c.classification.ownership, "—")}</span>
+        <span>${latest}</span>
+        <span class="source-count-cell">${(c.sources || []).length}</span>
       </button>`;
   }).join("");
 
@@ -289,6 +295,16 @@ function renderBarList(targetId, rows, total, clickKind = null, limit = 6) {
           state.city = value;
           $("cityFilter").value = value;
         }
+        if (btn.dataset.overviewKind === "maturity") {
+          state.maturity = value;
+          $("maturityFilter").value = value;
+        }
+        if (btn.dataset.overviewKind === "capability") {
+          state.capability = value;
+          state.selectedCapability = value;
+          setView("capabilities");
+          setTimeout(() => selectCapability(value), 10);
+        }
         syncURL();
         renderAll();
       });
@@ -296,10 +312,23 @@ function renderBarList(targetId, rows, total, clickKind = null, limit = 6) {
   }
 }
 
+function capabilityCounts(rows) {
+  const counts = new Map();
+  for (const c of rows) {
+    for (const cap of c.capabilities || []) {
+      if (!cap.tag) continue;
+      counts.set(cap.tag, (counts.get(cap.tag) || 0) + 1);
+    }
+  }
+  return [...counts.entries()].sort((a,b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+}
+
 function renderOverview() {
   const rows = filteredCompanies();
-  renderBarList("sectorOverview", countBy(rows, c => c.classification?.sector_group), rows.length, "sector");
-  renderBarList("cityOverview", countBy(rows, c => c.primary_location?.city), rows.length, "city");
+  renderBarList("sectorOverview", countBy(rows, c => c.classification?.sector_group), rows.length, "sector", 6);
+  renderBarList("cityOverview", countBy(rows, c => c.primary_location?.city), rows.length, "city", 6);
+  renderBarList("maturityOverview", countBy(rows, c => c.classification?.maturity), rows.length, "maturity", 6);
+  renderBarList("capabilityOverview", capabilityCounts(rows), rows.length, "capability", 6);
 
   const capital = rows.filter(c =>
     c.financials?.disclosed_funding_total_usd ||
@@ -318,11 +347,62 @@ function renderOverview() {
       <div class="signal-cell"><strong>${hiring}</strong><span>hiring signals</span></div>
       <div class="signal-cell"><strong>${exact}</strong><span>street addresses</span></div>`;
   }
+
+  renderWatchlist(rows);
+  renderLatestActivityPreview(rows);
+}
+
+function renderWatchlist(rows) {
+  const target = $("watchlist");
+  if (!target) return;
+
+  const watch = rows
+    .filter(c => ["Emerging","Growth","Established growth"].includes(c.classification?.maturity))
+    .sort((a,b) =>
+      String(b.latest_event?.date || "").localeCompare(String(a.latest_event?.date || "")) ||
+      (b.profile?.founded_year || 0) - (a.profile?.founded_year || 0)
+    )
+    .slice(0, 8);
+
+  target.innerHTML = watch.length ? watch.map(c => `
+    <button class="compact-item" data-watch-company="${esc(c.slug)}">
+      <span>
+        <strong>${esc(c.name)}</strong>
+        <small>${display(c.primary_location?.city, "OC")} · ${display(c.classification?.maturity, "")}</small>
+      </span>
+      <em>${c.profile?.founded_year || "—"}</em>
+    </button>`).join("")
+  : `<div class="empty-state mini">No emerging/growth companies in current view.</div>`;
+
+  target.querySelectorAll("[data-watch-company]").forEach(btn => {
+    btn.addEventListener("click", () => openCompany(btn.dataset.watchCompany));
+  });
+}
+
+function renderLatestActivityPreview(rows) {
+  const target = $("latestActivity");
+  if (!target) return;
+  const allowed = new Set(rows.map(c => c.slug));
+  const events = allEvents().filter(e => allowed.has(e.company_slug)).slice(0, 7);
+
+  target.innerHTML = events.length ? events.map(e => `
+    <button class="compact-item activity-preview" data-preview-company="${esc(e.company_slug)}">
+      <span>
+        <strong>${esc(e.company_name)}</strong>
+        <small>${display(e.type, "Activity")} · ${display(e.date, "")}</small>
+      </span>
+    </button>`).join("")
+  : `<div class="empty-state mini">No tracked events in current view.</div>`;
+
+  target.querySelectorAll("[data-preview-company]").forEach(btn => {
+    btn.addEventListener("click", () => openCompany(btn.dataset.previewCompany));
+  });
 }
 
 function allEvents() {
   const events = [];
-  for (const company of DATA.companies) {
+  const universe = filteredCompanies();
+  for (const company of universe) {
     for (const e of company.events || []) {
       events.push({
         ...e,
@@ -336,12 +416,105 @@ function allEvents() {
   return events.sort((a,b) => String(b.date || "").localeCompare(String(a.date || "")));
 }
 
+function activityUniverseCompanies() {
+  return filteredCompanies();
+}
+
+function filteredEvents() {
+  const allowed = new Set(activityUniverseCompanies().map(c => c.slug));
+  let events = allEvents().filter(e => allowed.has(e.company_slug));
+  if (state.eventType) events = events.filter(e => e.type === state.eventType);
+  return events;
+}
+
+function renderActivityMetrics(rows, events) {
+  const target = $("activityMetrics");
+  if (!target) return;
+
+  const capitalCompanies = rows.filter(c =>
+    c.financials?.disclosed_funding_total_usd ||
+    c.financials?.latest_round_usd ||
+    c.financials?.valuation_usd
+  );
+  const totalFunding = rows.reduce((sum,c) => sum + Number(c.financials?.disclosed_funding_total_usd || 0), 0);
+  const gov = rows.filter(c => c.signals?.government_contract_or_grant).length;
+  const currentYear = events.filter(e => String(e.date || "").startsWith("2026")).length;
+
+  target.innerHTML = `
+    <div><strong>${events.length}</strong><span>tracked events</span></div>
+    <div><strong>${capitalCompanies.length}</strong><span>companies with capital records</span></div>
+    <div><strong>${gov}</strong><span>government signals</span></div>
+    <div><strong>${money(totalFunding)}</strong><span>captured disclosed funding</span></div>
+    <div><strong>${currentYear}</strong><span>2026 tracked events</span></div>`;
+}
+
+function renderGovernmentCompanies(rows) {
+  const target = $("governmentCompanies");
+  if (!target) return;
+  const gov = rows.filter(c => c.signals?.government_contract_or_grant).slice(0, 12);
+  target.innerHTML = gov.length ? gov.map(c => `
+    <button class="compact-item" data-gov-company="${esc(c.slug)}">
+      <span><strong>${esc(c.name)}</strong><small>${display(c.primary_location?.city, "OC")}</small></span>
+    </button>`).join("")
+  : `<div class="empty-state mini">No government signals in current view.</div>`;
+
+  target.querySelectorAll("[data-gov-company]").forEach(btn => {
+    btn.addEventListener("click", () => openCompany(btn.dataset.govCompany));
+  });
+}
+
+function renderCapitalTable(rows) {
+  const target = $("capitalTable");
+  if (!target) return;
+
+  const capital = rows
+    .filter(c =>
+      c.financials?.disclosed_funding_total_usd ||
+      c.financials?.latest_round_usd ||
+      c.financials?.valuation_usd
+    )
+    .sort((a,b) =>
+      Number(b.financials?.disclosed_funding_total_usd || b.financials?.latest_round_usd || 0) -
+      Number(a.financials?.disclosed_funding_total_usd || a.financials?.latest_round_usd || 0)
+    );
+
+  if (!capital.length) {
+    target.innerHTML = `<div class="empty-state"><strong>No captured capital records in current view.</strong></div>`;
+    return;
+  }
+
+  target.innerHTML = `
+    <div class="capital-head">
+      <span>Company</span><span>City</span><span>Disclosed total</span><span>Latest round</span><span>Stage</span><span>Date</span>
+    </div>
+    ${capital.map(c => `
+      <button class="capital-row" data-capital-company="${esc(c.slug)}">
+        <span><strong>${esc(c.name)}</strong></span>
+        <span>${display(c.primary_location?.city, "—")}</span>
+        <span>${c.financials?.disclosed_funding_total_usd ? money(c.financials.disclosed_funding_total_usd) : "—"}</span>
+        <span>${c.financials?.latest_round_usd ? money(c.financials.latest_round_usd) : "—"}</span>
+        <span>${display(c.financials?.latest_round_stage, "—")}</span>
+        <span>${display(c.financials?.latest_round_date, "—")}</span>
+      </button>`).join("")}`;
+
+  target.querySelectorAll("[data-capital-company]").forEach(btn => {
+    btn.addEventListener("click", () => openCompany(btn.dataset.capitalCompany));
+  });
+}
+
 function renderActivity() {
   const feed = $("activityFeed");
   if (!feed) return;
 
-  let events = allEvents();
-  if (state.eventType) events = events.filter(e => e.type === state.eventType);
+  const rows = activityUniverseCompanies();
+  const events = filteredEvents();
+  renderActivityMetrics(rows, events);
+  renderGovernmentCompanies(rows);
+  renderCapitalTable(rows);
+
+  if ($("activitySideTitle")) {
+    $("activitySideTitle").textContent = `${events.length} tracked ${events.length === 1 ? "event" : "events"}`;
+  }
 
   feed.innerHTML = events.length ? events.map(e => `
     <div class="activity-entry">
@@ -355,13 +528,13 @@ function renderActivity() {
       <div class="activity-summary">${display(e.summary, "")}</div>
       <div class="activity-amount">${e.amount_usd ? money(e.amount_usd) : ""}</div>
     </div>`).join("")
-  : `<div class="empty-state"><strong>No events match.</strong>Clear the event-type filter.</div>`;
+  : `<div class="empty-state"><strong>No events match.</strong>Clear filters or choose another event type.</div>`;
 
   feed.querySelectorAll("[data-activity-company]").forEach(btn => {
     btn.addEventListener("click", () => openCompany(btn.dataset.activityCompany));
   });
 
-  renderBarList("eventTypeOverview", countBy(allEvents(), e => e.type), allEvents().length, null, 10);
+  renderBarList("eventTypeOverview", countBy(events, e => e.type), events.length, null, 10);
 }
 
 function renderCapabilityBrowser() {
@@ -401,12 +574,52 @@ function renderCapabilityBrowser() {
   });
 }
 
+
+function renderCapabilitySummary() {
+  const rows = filteredCompanies();
+  const tags = new Set();
+  let links = 0;
+  for (const c of rows) {
+    for (const cap of c.capabilities || []) {
+      if (cap.tag) tags.add(cap.tag);
+      links += 1;
+    }
+  }
+  if ($("uniqueCapabilityCount")) $("uniqueCapabilityCount").textContent = tags.size;
+  if ($("manufacturingCompanyCount")) {
+    $("manufacturingCompanyCount").textContent = rows.filter(c => (c.profile?.manufacturing_processes || []).length).length;
+  }
+  if ($("capabilityCompanyCount")) $("capabilityCompanyCount").textContent = rows.length;
+  if ($("capabilityLinkCount")) $("capabilityLinkCount").textContent = links;
+  renderProcessIndex(rows);
+}
+
+function renderProcessIndex(rows) {
+  const target = $("processIndex");
+  if (!target) return;
+
+  const processRows = rows
+    .filter(c => (c.profile?.manufacturing_processes || []).length)
+    .sort((a,b) => a.name.localeCompare(b.name));
+
+  target.innerHTML = processRows.length ? processRows.map(c => `
+    <button class="process-row" data-process-company="${esc(c.slug)}">
+      <span><strong>${esc(c.name)}</strong><small>${display(c.primary_location?.city, "OC")}</small></span>
+      <span>${(c.profile.manufacturing_processes || []).map(x => esc(x)).join(" · ")}</span>
+    </button>`).join("")
+  : `<div class="empty-state"><strong>No sourced manufacturing-process records in current view.</strong></div>`;
+
+  target.querySelectorAll("[data-process-company]").forEach(btn => {
+    btn.addEventListener("click", () => openCompany(btn.dataset.processCompany));
+  });
+}
+
 function selectCapability(tag) {
   state.selectedCapability = tag;
   $("capabilityTitle").textContent = tag;
 
-  const companies = DATA.companies.filter(c => (c.capabilities || []).some(x => x.tag === tag));
-  $("capabilitySubtitle").textContent = `${companies.length} ${companies.length === 1 ? "company" : "companies"} with this capability`;
+  const companies = filteredCompanies().filter(c => (c.capabilities || []).some(x => x.tag === tag));
+  $("capabilitySubtitle").textContent = `${companies.length} ${companies.length === 1 ? "company" : "companies"} with this capability in the current filtered view`;
 
   $("capabilityCompanies").innerHTML = companies
     .sort((a,b) => a.name.localeCompare(b.name))
@@ -420,6 +633,14 @@ function selectCapability(tag) {
     btn.addEventListener("click", () => openCompany(btn.dataset.capCompany));
   });
 
+  const cityCounts = countBy(companies, c => c.primary_location?.city);
+  if ($("capabilityCities")) {
+    $("capabilityCities").innerHTML = cityCounts.length
+      ? `<div class="side-subhead">Geographic concentration</div>` +
+        cityCounts.slice(0,8).map(([city,count]) => `<div class="city-count-row"><span>${esc(city)}</span><strong>${count}</strong></div>`).join("")
+      : "";
+  }
+
   renderCapabilityBrowser();
 }
 
@@ -428,29 +649,53 @@ function openCompany(slug) {
   if (!c) return;
   state.selectedCompany = c;
 
-  const sourceLinks = (c.sources || []).slice(0, 8).map(s => `
+  const sourceLinks = (c.sources || []).map(s => `
     <a class="source-item" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">
       <strong>${display(s.type, "Source")}</strong>
       <span>${display(s.facts_supported, s.url)}</span>
+      ${s.verified_as_of ? `<em>verified ${esc(s.verified_as_of)}</em>` : ""}
     </a>`).join("");
 
-  const events = (c.events || []).slice(0, 8).map(e => `
+  const events = (c.events || []).slice(0, 10).map(e => `
     <div class="timeline-item">
       <span class="timeline-date">${display(e.date, "Date unknown")}</span>
       <strong>${display(e.type, "Activity")}${e.amount_usd ? ` · ${money(e.amount_usd)}` : ""}</strong>
       <p>${display(e.summary, "")}</p>
     </div>`).join("");
 
-  const leader = c.profile.leader ? `${esc(c.profile.leader.name)}${c.profile.leader.role ? ` · ${esc(c.profile.leader.role)}` : ""}` : "Not verified";
+  const products = (c.products || []).map(p => `
+    <div class="product-row">
+      <strong>${display(p.name, "Product / platform")}</strong>
+      <span>${display(p.category, "")}</span>
+    </div>`).join("");
+
+  const locations = (c.locations || []).map(loc => `
+    <div class="location-row">
+      <strong>${display(loc.type, "OC location")}</strong>
+      <span>${display(loc.address || loc.city, "Location not verified")}</span>
+      <small>${loc.verified_as_of ? `verified ${esc(loc.verified_as_of)}` : ""}</small>
+    </div>`).join("");
+
+  const leader = c.profile.leader
+    ? `${esc(c.profile.leader.name)}${c.profile.leader.role ? ` · ${esc(c.profile.leader.role)}` : ""}`
+    : "Not verified";
   const employee = c.profile.employees?.label || "Not verified";
-  const location = [c.primary_location.address, c.primary_location.city].filter(Boolean).join(" · ");
-  const coverage = c.completeness?.coverage_pct ?? 0;
+  const sourceCount = (c.sources || []).length;
+  const verifiedAsOf = c.status?.as_of_date || "Not stated";
+  const confidence = c.status?.data_confidence || c.status?.verification_confidence || "Not rated";
 
   $("drawerContent").innerHTML = `
     <article>
-      <div class="section-kicker">${display(c.classification.sector_group, "HARD TECH")}</div>
+      <div class="dossier-meta-line">
+        <span>${display(c.classification.sector_group, "HARD TECH")}</span>
+        <span>${sourceCount} ${sourceCount === 1 ? "source" : "sources"}</span>
+        <span>verified ${esc(verifiedAsOf)}</span>
+      </div>
+
       <h2>${esc(c.name)}</h2>
-      <div class="drawer-subtitle">${display(c.primary_location.city, "Orange County")} · ${display(c.classification.primary_sector, "Hard tech")}</div>
+      <div class="drawer-subtitle">
+        ${display(c.primary_location.city, "Orange County")} · ${display(c.classification.primary_sector, "Hard tech")}
+      </div>
 
       <div class="profile-actions">
         ${c.website ? `<a class="primary" href="${esc(c.website)}" target="_blank" rel="noopener noreferrer">Company site ↗</a>` : ""}
@@ -464,9 +709,15 @@ function openCompany(slug) {
         <div class="profile-field"><span>Employees</span><strong>${display(employee)}</strong></div>
         <div class="profile-field"><span>Ownership</span><strong>${display(c.classification.ownership)}</strong></div>
         <div class="profile-field"><span>Leadership</span><strong>${leader}</strong></div>
-        <div class="profile-field"><span>Funding captured</span><strong>${money(c.financials.disclosed_funding_total_usd || c.financials.latest_round_usd)}</strong></div>
-        <div class="profile-field"><span>Data coverage</span><strong>${Math.round(coverage)}% · ${display(c.status.data_confidence, "Unrated")}</strong></div>
+        <div class="profile-field"><span>Maturity</span><strong>${display(c.classification.maturity)}</strong></div>
+        <div class="profile-field"><span>Data confidence</span><strong>${display(confidence)}</strong></div>
       </div>
+
+      ${products ? `
+      <section class="drawer-section">
+        <h3>Products / platforms</h3>
+        <div class="product-list">${products}</div>
+      </section>` : ""}
 
       <section class="drawer-section">
         <h3>Capabilities</h3>
@@ -481,9 +732,25 @@ function openCompany(slug) {
         <div class="cap-chip-wrap">${c.profile.manufacturing_processes.map(x => `<span class="tag">${esc(x)}</span>`).join("")}</div>
       </section>` : ""}
 
+      ${c.profile.end_markets?.length ? `
       <section class="drawer-section">
-        <h3>Location</h3>
-        <p>${display(location, "Orange County location under verification.")}</p>
+        <h3>End markets</h3>
+        <div class="cap-chip-wrap">${c.profile.end_markets.map(x => `<span class="tag">${esc(x)}</span>`).join("")}</div>
+      </section>` : ""}
+
+      <section class="drawer-section">
+        <h3>Locations</h3>
+        <div class="location-list">${locations || `<p>Orange County location under verification.</p>`}</div>
+      </section>
+
+      <section class="drawer-section">
+        <h3>Capital</h3>
+        <div class="finance-grid">
+          <div><span>Disclosed total</span><strong>${c.financials?.disclosed_funding_total_usd ? money(c.financials.disclosed_funding_total_usd) : "Not public"}</strong></div>
+          <div><span>Latest round</span><strong>${c.financials?.latest_round_usd ? money(c.financials.latest_round_usd) : "Not public"}</strong></div>
+          <div><span>Stage</span><strong>${display(c.financials?.latest_round_stage, "Not public")}</strong></div>
+          <div><span>Valuation</span><strong>${c.financials?.valuation_usd ? money(c.financials.valuation_usd) : "Not public"}</strong></div>
+        </div>
       </section>
 
       ${(c.signals.government_contract_or_grant || c.signals.commercial_customer || c.signals.hiring) ? `
@@ -497,17 +764,21 @@ function openCompany(slug) {
       ${events ? `<section class="drawer-section"><h3>Activity</h3>${events}</section>` : ""}
 
       <section class="drawer-section">
-        <h3>Sources</h3>
+        <h3>Source register</h3>
         <div class="source-list">${sourceLinks || `<span class="muted small">No source links captured.</span>`}</div>
       </section>
 
-      ${c.completeness?.next_research_action && c.completeness.next_research_action !== "No priority gap" ? `
-        <div class="quality-note"><strong>Research queue:</strong> ${esc(c.completeness.next_research_action)}</div>` : ""}
+      <div class="public-method-note">
+        Public profile fields are shown only where sufficiently supported in the frozen source set. Missing values are unknown, not zero.
+      </div>
     </article>`;
 
   document.querySelectorAll("[data-drawer-cap]").forEach(btn => {
     btn.addEventListener("click", () => {
       closeDrawer();
+      state.capability = btn.dataset.drawerCap;
+      state.selectedCapability = btn.dataset.drawerCap;
+      syncURL();
       setView("capabilities");
       setTimeout(() => selectCapability(btn.dataset.drawerCap), 20);
     });
@@ -553,9 +824,21 @@ function setView(view) {
   state.view = view;
   document.querySelectorAll("[data-view]").forEach(btn => btn.classList.toggle("active", btn.dataset.view === view));
   $("exploreView").classList.toggle("hidden", view !== "explore");
+  $("companiesView").classList.toggle("hidden", view !== "companies");
   $("capabilitiesView").classList.toggle("hidden", view !== "capabilities");
   $("activityView").classList.toggle("hidden", view !== "activity");
+
+  const url = new URL(window.location.href);
+  if (view === "explore") url.searchParams.delete("view");
+  else url.searchParams.set("view", view);
+  history.replaceState(null, "", url);
+
   if (view === "explore") setTimeout(() => map?.invalidateSize(), 20);
+  if (view === "companies") renderCompanyList();
+  if (view === "capabilities") {
+    renderCapabilitySummary();
+    renderCapabilityBrowser();
+  }
   if (view === "activity") renderActivity();
 }
 
@@ -580,6 +863,7 @@ function restoreURL() {
   state.maturity = p.get("maturity") || "";
   state.ownership = p.get("ownership") || "";
   state.capability = p.get("capability") || "";
+  state.view = p.get("view") || "explore";
   $("searchInput").value = state.search;
   $("sectorFilter").value = state.sector;
   $("cityFilter").value = state.city;
@@ -592,6 +876,8 @@ function renderAll() {
   renderCompanyList();
   renderOverview();
   renderMap();
+  renderCapabilitySummary();
+  renderCapabilityBrowser();
   renderActivity();
 }
 
@@ -1024,6 +1310,7 @@ async function boot() {
     $("statLocations").textContent = DATA.manifest.counts.map_point_count;
     $("statCapabilities").textContent = DATA.manifest.counts.capability_link_count;
     $("statSources").textContent = DATA.manifest.counts.source_count;
+    if ($("statEvents")) $("statEvents").textContent = DATA.manifest.counts.event_count;
 
     initMap();
     bindControls();
@@ -1031,6 +1318,7 @@ async function boot() {
     restoreURL();
     renderCapabilityBrowser();
     renderAll();
+    setView(state.view);
 
     if (window.location.hash.startsWith("#company=")) {
       const slug = window.location.hash.replace("#company=", "");
