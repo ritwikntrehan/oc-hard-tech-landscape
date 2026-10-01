@@ -16,7 +16,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 31.9
+    "has_cre_signal": false,
+    "public_data_richness_pct": 29.5
   },
   {
     "company_id": "OC-002",
@@ -35,7 +36,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 31.2
+    "has_cre_signal": false,
+    "public_data_richness_pct": 28.8
   },
   {
     "company_id": "OC-003",
@@ -54,7 +56,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 22.9
+    "has_cre_signal": false,
+    "public_data_richness_pct": 21.2
   },
   {
     "company_id": "OC-004",
@@ -73,7 +76,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 34.0
+    "has_cre_signal": false,
+    "public_data_richness_pct": 31.4
   },
   {
     "company_id": "OC-005",
@@ -92,7 +96,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 27.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 25.6
   },
   {
     "company_id": "OC-006",
@@ -111,7 +116,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 33.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 30.8
   },
   {
     "company_id": "OC-007",
@@ -130,7 +136,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 20.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 19.2
   },
   {
     "company_id": "OC-008",
@@ -149,7 +156,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 31.2
+    "has_cre_signal": false,
+    "public_data_richness_pct": 28.8
   },
   {
     "company_id": "OC-009",
@@ -168,7 +176,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": true,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 69.4
+    "has_cre_signal": false,
+    "public_data_richness_pct": 64.1
   },
   {
     "company_id": "OC-010",
@@ -187,7 +196,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 22.9
+    "has_cre_signal": false,
+    "public_data_richness_pct": 21.2
   },
   {
     "company_id": "OC-011",
@@ -206,7 +216,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 34.0
+    "has_cre_signal": false,
+    "public_data_richness_pct": 31.4
   },
   {
     "company_id": "OC-012",
@@ -225,7 +236,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 27.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 25.6
   },
   {
     "company_id": "OC-089",
@@ -244,7 +256,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 12.5
+    "has_cre_signal": false,
+    "public_data_richness_pct": 11.5
   },
   {
     "company_id": "OC-013",
@@ -263,14 +276,15 @@
     "has_manufacturing_processes": true,
     "has_government_signal": true,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 44.4
+    "has_cre_signal": false,
+    "public_data_richness_pct": 41.0
   },
   {
     "company_id": "OC-014",
     "company_name": "AstroForge",
     "slug": "astroforge",
-    "source_count": 6,
-    "event_count": 1,
+    "source_count": 9,
+    "event_count": 2,
     "capital_round_count": 1,
     "ecosystem_relationship_count": 3,
     "has_funding_total": false,
@@ -282,7 +296,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": true,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 52.8
+    "has_cre_signal": true,
+    "public_data_richness_pct": 59.0
   },
   {
     "company_id": "OC-015",
@@ -301,14 +316,15 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 41.7
+    "has_cre_signal": false,
+    "public_data_richness_pct": 38.5
   },
   {
     "company_id": "OC-016",
     "company_name": "Auriga Space",
     "slug": "auriga-space",
-    "source_count": 5,
-    "event_count": 1,
+    "source_count": 9,
+    "event_count": 2,
     "capital_round_count": 1,
     "ecosystem_relationship_count": 3,
     "has_funding_total": true,
@@ -319,8 +335,9 @@
     "has_leadership": true,
     "has_manufacturing_processes": false,
     "has_government_signal": true,
-    "has_hiring_signal": false,
-    "public_data_richness_pct": 61.1
+    "has_hiring_signal": true,
+    "has_cre_signal": true,
+    "public_data_richness_pct": 74.4
   },
   {
     "company_id": "OC-017",
@@ -339,7 +356,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": true,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 44.4
+    "has_cre_signal": false,
+    "public_data_richness_pct": 41.0
   },
   {
     "company_id": "OC-100",
@@ -358,7 +376,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 20.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 19.2
   },
   {
     "company_id": "OC-018",
@@ -377,7 +396,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 20.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 19.2
   },
   {
     "company_id": "OC-088",
@@ -396,7 +416,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 12.5
+    "has_cre_signal": false,
+    "public_data_richness_pct": 11.5
   },
   {
     "company_id": "OC-019",
@@ -415,7 +436,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": true,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 41.7
+    "has_cre_signal": false,
+    "public_data_richness_pct": 38.5
   },
   {
     "company_id": "OC-096",
@@ -434,7 +456,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 22.9
+    "has_cre_signal": false,
+    "public_data_richness_pct": 21.2
   },
   {
     "company_id": "OC-020",
@@ -453,7 +476,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 20.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 19.2
   },
   {
     "company_id": "OC-021",
@@ -472,7 +496,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 33.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 30.8
   },
   {
     "company_id": "OC-098",
@@ -491,7 +516,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 33.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 30.8
   },
   {
     "company_id": "OC-095",
@@ -510,7 +536,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 4.2
+    "has_cre_signal": false,
+    "public_data_richness_pct": 3.8
   },
   {
     "company_id": "OC-023",
@@ -529,7 +556,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 34.0
+    "has_cre_signal": false,
+    "public_data_richness_pct": 31.4
   },
   {
     "company_id": "OC-024",
@@ -548,7 +576,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 22.9
+    "has_cre_signal": false,
+    "public_data_richness_pct": 21.2
   },
   {
     "company_id": "OC-025",
@@ -567,7 +596,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 12.5
+    "has_cre_signal": false,
+    "public_data_richness_pct": 11.5
   },
   {
     "company_id": "OC-026",
@@ -586,7 +616,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 12.5
+    "has_cre_signal": false,
+    "public_data_richness_pct": 11.5
   },
   {
     "company_id": "OC-027",
@@ -605,14 +636,15 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 12.5
+    "has_cre_signal": false,
+    "public_data_richness_pct": 11.5
   },
   {
     "company_id": "OC-028",
     "company_name": "FieldAI",
     "slug": "fieldai",
-    "source_count": 9,
-    "event_count": 1,
+    "source_count": 11,
+    "event_count": 2,
     "capital_round_count": 1,
     "ecosystem_relationship_count": 11,
     "has_funding_total": true,
@@ -624,7 +656,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 69.4
+    "has_cre_signal": true,
+    "public_data_richness_pct": 74.4
   },
   {
     "company_id": "OC-029",
@@ -643,7 +676,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 34.0
+    "has_cre_signal": false,
+    "public_data_richness_pct": 31.4
   },
   {
     "company_id": "OC-030",
@@ -662,7 +696,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 20.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 19.2
   },
   {
     "company_id": "OC-031",
@@ -681,7 +716,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 33.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 30.8
   },
   {
     "company_id": "OC-032",
@@ -700,14 +736,15 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 10.4
+    "has_cre_signal": false,
+    "public_data_richness_pct": 9.6
   },
   {
     "company_id": "OC-033",
     "company_name": "Harbinger Motors",
     "slug": "harbinger-motors",
-    "source_count": 5,
-    "event_count": 1,
+    "source_count": 9,
+    "event_count": 2,
     "capital_round_count": 2,
     "ecosystem_relationship_count": 7,
     "has_funding_total": true,
@@ -719,7 +756,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 69.4
+    "has_cre_signal": true,
+    "public_data_richness_pct": 74.4
   },
   {
     "company_id": "OC-034",
@@ -738,7 +776,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": true,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 36.1
+    "has_cre_signal": false,
+    "public_data_richness_pct": 33.3
   },
   {
     "company_id": "OC-035",
@@ -756,8 +795,9 @@
     "has_leadership": true,
     "has_manufacturing_processes": true,
     "has_government_signal": true,
-    "has_hiring_signal": false,
-    "public_data_richness_pct": 66.7
+    "has_hiring_signal": true,
+    "has_cre_signal": true,
+    "public_data_richness_pct": 76.9
   },
   {
     "company_id": "OC-036",
@@ -776,7 +816,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 12.5
+    "has_cre_signal": false,
+    "public_data_richness_pct": 11.5
   },
   {
     "company_id": "OC-037",
@@ -795,7 +836,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 20.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 19.2
   },
   {
     "company_id": "OC-091",
@@ -814,7 +856,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 33.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 30.8
   },
   {
     "company_id": "OC-038",
@@ -833,7 +876,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 10.4
+    "has_cre_signal": false,
+    "public_data_richness_pct": 9.6
   },
   {
     "company_id": "OC-094",
@@ -852,7 +896,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 15.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 14.1
   },
   {
     "company_id": "OC-039",
@@ -871,7 +916,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 55.6
+    "has_cre_signal": false,
+    "public_data_richness_pct": 51.3
   },
   {
     "company_id": "OC-040",
@@ -890,7 +936,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 50.0
+    "has_cre_signal": false,
+    "public_data_richness_pct": 46.2
   },
   {
     "company_id": "OC-041",
@@ -909,7 +956,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 18.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 17.3
   },
   {
     "company_id": "OC-099",
@@ -928,14 +976,15 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 30.6
+    "has_cre_signal": false,
+    "public_data_richness_pct": 28.2
   },
   {
     "company_id": "OC-042",
     "company_name": "Layup Parts",
     "slug": "layup-parts",
-    "source_count": 3,
-    "event_count": 1,
+    "source_count": 6,
+    "event_count": 2,
     "capital_round_count": 1,
     "ecosystem_relationship_count": 5,
     "has_funding_total": true,
@@ -947,7 +996,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 67.4
+    "has_cre_signal": true,
+    "public_data_richness_pct": 74.4
   },
   {
     "company_id": "OC-043",
@@ -966,14 +1016,15 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 33.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 30.8
   },
   {
     "company_id": "OC-044",
     "company_name": "Mach Industries",
     "slug": "mach-industries",
-    "source_count": 5,
-    "event_count": 1,
+    "source_count": 8,
+    "event_count": 2,
     "capital_round_count": 2,
     "ecosystem_relationship_count": 9,
     "has_funding_total": true,
@@ -984,8 +1035,9 @@
     "has_leadership": true,
     "has_manufacturing_processes": true,
     "has_government_signal": true,
-    "has_hiring_signal": false,
-    "public_data_richness_pct": 77.8
+    "has_hiring_signal": true,
+    "has_cre_signal": true,
+    "public_data_richness_pct": 89.7
   },
   {
     "company_id": "OC-045",
@@ -1004,7 +1056,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 36.1
+    "has_cre_signal": false,
+    "public_data_richness_pct": 33.3
   },
   {
     "company_id": "OC-093",
@@ -1023,7 +1076,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 33.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 30.8
   },
   {
     "company_id": "OC-046",
@@ -1042,7 +1096,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 52.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 48.7
   },
   {
     "company_id": "OC-047",
@@ -1061,7 +1116,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": true,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 58.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 53.8
   },
   {
     "company_id": "OC-048",
@@ -1080,7 +1136,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": true,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 33.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 30.8
   },
   {
     "company_id": "OC-049",
@@ -1099,7 +1156,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 50.0
+    "has_cre_signal": false,
+    "public_data_richness_pct": 46.2
   },
   {
     "company_id": "OC-050",
@@ -1118,7 +1176,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 18.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 17.3
   },
   {
     "company_id": "OC-051",
@@ -1137,7 +1196,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 31.2
+    "has_cre_signal": false,
+    "public_data_richness_pct": 28.8
   },
   {
     "company_id": "OC-052",
@@ -1156,7 +1216,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 31.2
+    "has_cre_signal": false,
+    "public_data_richness_pct": 28.8
   },
   {
     "company_id": "OC-053",
@@ -1175,7 +1236,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 34.0
+    "has_cre_signal": false,
+    "public_data_richness_pct": 31.4
   },
   {
     "company_id": "OC-022",
@@ -1194,7 +1256,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 44.4
+    "has_cre_signal": false,
+    "public_data_richness_pct": 41.0
   },
   {
     "company_id": "OC-054",
@@ -1213,7 +1276,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 18.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 17.3
   },
   {
     "company_id": "OC-055",
@@ -1232,7 +1296,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 22.9
+    "has_cre_signal": false,
+    "public_data_richness_pct": 21.2
   },
   {
     "company_id": "OC-056",
@@ -1251,7 +1316,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 18.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 17.3
   },
   {
     "company_id": "OC-057",
@@ -1270,7 +1336,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 12.5
+    "has_cre_signal": false,
+    "public_data_richness_pct": 11.5
   },
   {
     "company_id": "OC-058",
@@ -1289,7 +1356,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 29.2
+    "has_cre_signal": false,
+    "public_data_richness_pct": 26.9
   },
   {
     "company_id": "OC-059",
@@ -1308,7 +1376,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 29.2
+    "has_cre_signal": false,
+    "public_data_richness_pct": 26.9
   },
   {
     "company_id": "OC-060",
@@ -1327,7 +1396,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": true,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 36.1
+    "has_cre_signal": false,
+    "public_data_richness_pct": 33.3
   },
   {
     "company_id": "OC-061",
@@ -1346,7 +1416,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 38.9
+    "has_cre_signal": false,
+    "public_data_richness_pct": 35.9
   },
   {
     "company_id": "OC-062",
@@ -1365,7 +1436,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 14.6
+    "has_cre_signal": false,
+    "public_data_richness_pct": 13.5
   },
   {
     "company_id": "OC-063",
@@ -1384,7 +1456,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 18.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 17.3
   },
   {
     "company_id": "OC-064",
@@ -1403,7 +1476,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 33.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 30.8
   },
   {
     "company_id": "OC-065",
@@ -1422,7 +1496,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 33.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 30.8
   },
   {
     "company_id": "OC-066",
@@ -1441,14 +1516,15 @@
     "has_manufacturing_processes": true,
     "has_government_signal": true,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 36.1
+    "has_cre_signal": false,
+    "public_data_richness_pct": 33.3
   },
   {
     "company_id": "OC-067",
     "company_name": "Senra Systems",
     "slug": "senra-systems",
-    "source_count": 5,
-    "event_count": 1,
+    "source_count": 6,
+    "event_count": 2,
     "capital_round_count": 0,
     "ecosystem_relationship_count": 0,
     "has_funding_total": true,
@@ -1460,7 +1536,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 61.1
+    "has_cre_signal": true,
+    "public_data_richness_pct": 66.7
   },
   {
     "company_id": "OC-068",
@@ -1479,7 +1556,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 37.5
+    "has_cre_signal": false,
+    "public_data_richness_pct": 34.6
   },
   {
     "company_id": "OC-069",
@@ -1498,7 +1576,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": true,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 37.5
+    "has_cre_signal": false,
+    "public_data_richness_pct": 34.6
   },
   {
     "company_id": "OC-070",
@@ -1517,7 +1596,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 34.0
+    "has_cre_signal": false,
+    "public_data_richness_pct": 31.4
   },
   {
     "company_id": "OC-071",
@@ -1536,7 +1616,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 12.5
+    "has_cre_signal": false,
+    "public_data_richness_pct": 11.5
   },
   {
     "company_id": "OC-072",
@@ -1555,7 +1636,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 20.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 19.2
   },
   {
     "company_id": "OC-073",
@@ -1574,7 +1656,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 23.6
+    "has_cre_signal": false,
+    "public_data_richness_pct": 21.8
   },
   {
     "company_id": "OC-074",
@@ -1593,7 +1676,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 20.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 19.2
   },
   {
     "company_id": "OC-075",
@@ -1612,7 +1696,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 18.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 17.3
   },
   {
     "company_id": "OC-076",
@@ -1631,7 +1716,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 47.2
+    "has_cre_signal": false,
+    "public_data_richness_pct": 43.6
   },
   {
     "company_id": "OC-090",
@@ -1650,7 +1736,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 15.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 14.1
   },
   {
     "company_id": "OC-077",
@@ -1669,7 +1756,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 27.8
+    "has_cre_signal": false,
+    "public_data_richness_pct": 25.6
   },
   {
     "company_id": "OC-078",
@@ -1688,7 +1776,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 12.5
+    "has_cre_signal": false,
+    "public_data_richness_pct": 11.5
   },
   {
     "company_id": "OC-092",
@@ -1707,7 +1796,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 15.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 14.1
   },
   {
     "company_id": "OC-079",
@@ -1726,7 +1816,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 10.4
+    "has_cre_signal": false,
+    "public_data_richness_pct": 9.6
   },
   {
     "company_id": "OC-080",
@@ -1745,7 +1836,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 33.3
+    "has_cre_signal": false,
+    "public_data_richness_pct": 30.8
   },
   {
     "company_id": "OC-081",
@@ -1764,7 +1856,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 42.4
+    "has_cre_signal": false,
+    "public_data_richness_pct": 39.1
   },
   {
     "company_id": "OC-097",
@@ -1783,14 +1876,15 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 47.2
+    "has_cre_signal": false,
+    "public_data_richness_pct": 43.6
   },
   {
     "company_id": "OC-082",
     "company_name": "Turion Space",
     "slug": "turion-space",
-    "source_count": 4,
-    "event_count": 1,
+    "source_count": 6,
+    "event_count": 2,
     "capital_round_count": 1,
     "ecosystem_relationship_count": 9,
     "has_funding_total": true,
@@ -1801,8 +1895,9 @@
     "has_leadership": true,
     "has_manufacturing_processes": false,
     "has_government_signal": true,
-    "has_hiring_signal": false,
-    "public_data_richness_pct": 61.1
+    "has_hiring_signal": true,
+    "has_cre_signal": true,
+    "public_data_richness_pct": 74.4
   },
   {
     "company_id": "OC-083",
@@ -1821,7 +1916,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 31.2
+    "has_cre_signal": false,
+    "public_data_richness_pct": 28.8
   },
   {
     "company_id": "OC-084",
@@ -1840,14 +1936,15 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 31.2
+    "has_cre_signal": false,
+    "public_data_richness_pct": 28.8
   },
   {
     "company_id": "OC-085",
     "company_name": "Volund Manufacturing",
     "slug": "volund-manufacturing",
-    "source_count": 3,
-    "event_count": 1,
+    "source_count": 5,
+    "event_count": 2,
     "capital_round_count": 1,
     "ecosystem_relationship_count": 5,
     "has_funding_total": false,
@@ -1859,7 +1956,8 @@
     "has_manufacturing_processes": true,
     "has_government_signal": false,
     "has_hiring_signal": true,
-    "public_data_richness_pct": 59.0
+    "has_cre_signal": true,
+    "public_data_richness_pct": 66.7
   },
   {
     "company_id": "OC-086",
@@ -1878,7 +1976,8 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 12.5
+    "has_cre_signal": false,
+    "public_data_richness_pct": 11.5
   },
   {
     "company_id": "OC-087",
@@ -1897,6 +1996,7 @@
     "has_manufacturing_processes": false,
     "has_government_signal": false,
     "has_hiring_signal": false,
-    "public_data_richness_pct": 10.4
+    "has_cre_signal": false,
+    "public_data_richness_pct": 9.6
   }
 ]

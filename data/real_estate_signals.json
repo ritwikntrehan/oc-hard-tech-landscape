@@ -1,0 +1,343 @@
+[
+  {
+    "signal_id": "CRE-001",
+    "company_id": "OC-067",
+    "company_name": "Senra Systems",
+    "city": "Cypress",
+    "address": "6100 Chip Ave, Cypress, CA 90630",
+    "maturity": "Scaling manufacturer",
+    "facility_type": "Wire-harness manufacturing factory",
+    "facility_sqft": 80000,
+    "site_area_acres": null,
+    "occupancy_status": "Leased / brought online in 2026",
+    "signal_date": "2026-07-15",
+    "signal_type": "Active expansion",
+    "observed_evidence": [
+      "Factory 2 in Cypress is approximately 80,000 sq ft.",
+      "Factory 2 expanded production footprint by 5X.",
+      "Company plans a third factory after a $65M Series B.",
+      "Company targets growth from ~1,000 to ~10,000 harnesses per month by next year.",
+      "Company is actively hiring builders, engineers and technicians."
+    ],
+    "space_requirements": [
+      "industrial manufacturing",
+      "assembly",
+      "quality/test",
+      "technician workforce",
+      "traceable production"
+    ],
+    "cre_interpretation": "Direct expansion signal. This is the clearest near-term tenant-representation lead in the current emerging/scaling set because another factory is explicitly planned.",
+    "signal_strength": "Direct / high",
+    "source_urls": [
+      "https://www.senrasystems.us/media/announcing-our-series-b",
+      "https://www.senrasystems.us/media/factory-2",
+      "https://ciwqs.waterboards.ca.gov/ciwqs/readOnly/CiwqsReportServlet?newPageNumber=1423&reportID=6734464"
+    ]
+  },
+  {
+    "signal_id": "CRE-002",
+    "company_id": "OC-033",
+    "company_name": "Harbinger Motors",
+    "city": "Garden Grove",
+    "address": "12821 Knott St, Garden Grove, CA 92841",
+    "maturity": "Scaling manufacturer",
+    "facility_type": "Vehicle manufacturing / HQ",
+    "facility_sqft": 173000,
+    "site_area_acres": 7.97,
+    "occupancy_status": "Leased manufacturing facility",
+    "signal_date": "2026-09-30",
+    "signal_type": "Scaling in place / capacity pressure",
+    "observed_evidence": [
+      "Current site is an approximately 173,000 sq ft manufacturing building on 7.97 acres.",
+      "Original lease was reported at 165,171 sq ft, with office/engineering upfit.",
+      "A 10,338 sq ft internal office mezzanine was proposed in 2025.",
+      "FedEx placed a binding order for 2,000 trucks valued above $300M.",
+      "Current careers page shows broad Garden Grove hiring across manufacturing, facilities, quality, logistics and engineering."
+    ],
+    "space_requirements": [
+      "vehicle assembly",
+      "battery/powertrain",
+      "manufacturing",
+      "warehouse/logistics",
+      "engineering office",
+      "yard/vehicle movement"
+    ],
+    "cre_interpretation": "Strong capacity-utilization and expansion watch. Existing footprint is large, but the order book, production schedule and hiring make future additional space or operational reconfiguration plausible.",
+    "signal_strength": "Strong / inferred next-space pressure",
+    "source_urls": [
+      "https://ceqanet.lci.ca.gov/2025050492/2",
+      "https://www.colliers.com/en/news/los-angeles/innovative-commercial-ev-company-harbinger-motors-lands-facility-in-garden-grove",
+      "https://harbingermotors.com/careers/",
+      "https://harbingermotors.com/newsroom/fedex-orders-2000-harbinger-electric-trucks/"
+    ]
+  },
+  {
+    "signal_id": "CRE-003",
+    "company_id": "OC-044",
+    "company_name": "Mach Industries",
+    "city": "Huntington Beach",
+    "address": "5473 Bolsa Ave, Huntington Beach, CA 92647",
+    "maturity": "Rapid-growth defense manufacturer",
+    "facility_type": "Advanced manufacturing / prototyping HQ",
+    "facility_sqft": 115000,
+    "site_area_acres": null,
+    "occupancy_status": "Current HQ / Forge 1",
+    "signal_date": "2026-09-10",
+    "signal_type": "Manufacturing scale",
+    "observed_evidence": [
+      "Forge 1 in Huntington Beach is 115,000 sq ft and dedicated to engineering, rapid prototyping and advanced manufacturing.",
+      "Company states it is transitioning from rapid development to scaled production and deployment.",
+      "Current job board shows more than 100 open roles, including Huntington Beach manufacturing, build, CNC, composites and energetics positions.",
+      "2025 Series B proceeds were explicitly tied to expansion of Forge Huntington."
+    ],
+    "space_requirements": [
+      "advanced manufacturing",
+      "energetics-adjacent engineering",
+      "CNC",
+      "composites",
+      "prototype/build areas",
+      "engineering office"
+    ],
+    "cre_interpretation": "Existing large footprint is already a scaling node. Track adjacent-space requirements, additional OC production sites, and supplier/manufacturing spillover rather than assuming an immediate HQ move.",
+    "signal_strength": "Strong / scaling in place",
+    "source_urls": [
+      "https://machindustries.com/articles/mach-industries-announces-san-francisco-expansion",
+      "https://job-boards.greenhouse.io/machindustries",
+      "https://machindustries.com/articles/mach-industries-raises-100-million-in-series-b-funding-to-advance-u-s-defense-manufacturing"
+    ]
+  },
+  {
+    "signal_id": "CRE-004",
+    "company_id": "OC-042",
+    "company_name": "Layup Parts",
+    "city": "Huntington Beach",
+    "address": "15602 Container Lane, Huntington Beach, CA 92649",
+    "maturity": "Emerging advanced manufacturer",
+    "facility_type": "Composite manufacturing factory",
+    "facility_sqft": null,
+    "site_area_acres": null,
+    "occupancy_status": "Current factory",
+    "signal_date": "2026-09-28",
+    "signal_type": "Hiring / production expansion",
+    "observed_evidence": [
+      "Factory houses CNC machining, autoclave and out-of-autoclave curing, compression molding and large-format 3D printing.",
+      "29 open Huntington Beach roles were observed on Sep. 28, 2026.",
+      "Hiring spans production, composites, robotics, manufacturing engineering, controls, logistics and software.",
+      "Company raised a $42M Series A in June 2026."
+    ],
+    "space_requirements": [
+      "composites production",
+      "autoclave",
+      "CNC",
+      "large-format additive",
+      "materials/logistics",
+      "production floor"
+    ],
+    "cre_interpretation": "High-value watch for industrial expansion because capital, headcount and equipment-intensive manufacturing are all scaling at the same Huntington Beach site. No public square-foot requirement captured yet.",
+    "signal_strength": "Strong / watch",
+    "source_urls": [
+      "https://www.layupparts.com/",
+      "https://jobs.lever.co/layup/",
+      "https://earlystagestartups.com/companies/layup-parts-1"
+    ]
+  },
+  {
+    "signal_id": "CRE-005",
+    "company_id": "OC-014",
+    "company_name": "AstroForge",
+    "city": "Seal Beach",
+    "address": "1790 Apollo Ct, Seal Beach, CA 90740",
+    "maturity": "Emerging space company",
+    "facility_type": "Spacecraft manufacturing / integration / test HQ",
+    "facility_sqft": 64000,
+    "site_area_acres": null,
+    "occupancy_status": "Current HQ; expanded into site in 2024",
+    "signal_date": "2026-09",
+    "signal_type": "Active hiring / specialized facility use",
+    "observed_evidence": [
+      "Company moved into a 64,000 sq ft Seal Beach HQ built around refining technology, spacecraft integration, internal manufacturing and testing.",
+      "The facility was selected to support two deep-space missions concurrently.",
+      "Current hiring includes production operations, spacecraft integration/test, CNC, avionics, mechanical and RF roles."
+    ],
+    "space_requirements": [
+      "spacecraft integration",
+      "CNC/fabrication",
+      "test labs",
+      "refining R&D",
+      "engineering office"
+    ],
+    "cre_interpretation": "Specialized existing facility with clear technical build-out and active staffing. More useful as a future expansion/adjacency watch than a near-term relocation lead.",
+    "signal_strength": "Moderate-high / scaling in place",
+    "source_urls": [
+      "https://www.astroforge.com/updates-collection/onward-and-upward-astroforge-expands-into-a-new-hq",
+      "https://www.astroforge.com/careers",
+      "https://www.linkedin.com/jobs/astroforge-jobs"
+    ]
+  },
+  {
+    "signal_id": "CRE-006",
+    "company_id": "OC-082",
+    "company_name": "Turion Space",
+    "city": "Irvine",
+    "address": "5 Technology Drive, Irvine, CA 92618",
+    "maturity": "Growth-stage space company",
+    "facility_type": "Spacecraft / software headquarters",
+    "facility_sqft": null,
+    "site_area_acres": null,
+    "occupancy_status": "Current Irvine HQ",
+    "signal_date": "2026-10-01",
+    "signal_type": "Headcount growth",
+    "observed_evidence": [
+      "Company states it has 200+ people across Irvine and Washington, DC and is growing fast.",
+      "Current hiring spans propulsion, avionics, GNC, software and operations.",
+      "Raised $75M+ Series B in April 2026.",
+      "National-security program participation is expanding."
+    ],
+    "space_requirements": [
+      "spacecraft engineering",
+      "propulsion / avionics labs",
+      "operations",
+      "office / software",
+      "integration space"
+    ],
+    "cre_interpretation": "Strong headcount and program-growth watch. Facility-size data is still missing, so the next CRE research target is lease/building footprint and whether production remains concentrated at the Irvine HQ.",
+    "signal_strength": "Moderate-high / watch",
+    "source_urls": [
+      "https://www.turionspace.com/careers",
+      "https://www.turionspace.com/news/turion-raises-75-million-series-b-to-accelerate-u-s-space-superiority",
+      "https://www.turionspace.com/news/turion-space-recognized-as-space-based-interceptor-performer"
+    ]
+  },
+  {
+    "signal_id": "CRE-007",
+    "company_id": "OC-028",
+    "company_name": "FieldAI",
+    "city": "Irvine",
+    "address": "3 Morgan, Irvine, CA",
+    "maturity": "Rapid-growth robotics company",
+    "facility_type": "Robotics R&D / hardware operations",
+    "facility_sqft": null,
+    "site_area_acres": null,
+    "occupancy_status": "Current Irvine site",
+    "signal_date": "2026-10-01",
+    "signal_type": "Broad on-site hiring / hardware scale",
+    "observed_evidence": [
+      "Current Irvine hiring spans manufacturing engineering, robotics hardware, operations technicians, supply chain, reliability, field operations, autonomy and software.",
+      "Company reports a rapidly growing robot fleet deployed across industrial customer sites.",
+      "Previously raised more than $400M across financing rounds."
+    ],
+    "space_requirements": [
+      "robotics hardware lab",
+      "integration/test",
+      "light manufacturing",
+      "operations",
+      "engineering office",
+      "inventory/supply chain"
+    ],
+    "cre_interpretation": "High-value Irvine growth watch. The missing piece is the actual footprint and lease situation; current hiring mix suggests physical operations are expanding, not only software headcount.",
+    "signal_strength": "Strong / watch",
+    "source_urls": [
+      "https://jobs.lever.co/field-ai/",
+      "https://www.fieldai.com/news/fieldai-accelerates-industrial-customers-adoption-of-ai-in-collaboration-with-nvidia"
+    ]
+  },
+  {
+    "signal_id": "CRE-008",
+    "company_id": "OC-016",
+    "company_name": "Auriga Space",
+    "city": "Garden Grove",
+    "address": "7455 Lampson Ave, Garden Grove, CA 92841",
+    "maturity": "Emerging space / defense company",
+    "facility_type": "Electromagnetic launch R&D / manufacturing",
+    "facility_sqft": null,
+    "site_area_acres": null,
+    "occupancy_status": "Current Garden Grove HQ",
+    "signal_date": "2026-10-01",
+    "signal_type": "Technical hiring / program commercialization",
+    "observed_evidence": [
+      "Current hiring includes CNC machining, mechanical, FPGA controls, power electronics and GNC.",
+      "On-site CNC role is based at the Garden Grove facility.",
+      "Prometheus is generating revenue from government and commercial customers.",
+      "Hermes completed its first in-field launch in August 2026."
+    ],
+    "space_requirements": [
+      "CNC / machine shop",
+      "power electronics",
+      "prototype assembly",
+      "controls lab",
+      "test hardware"
+    ],
+    "cre_interpretation": "Early but increasingly physical Garden Grove operator. Track for machine-shop expansion or a larger test/manufacturing footprint as customer programs move from demonstration toward deployment.",
+    "signal_strength": "Moderate / emerging watch",
+    "source_urls": [
+      "https://www.aurigaspace.com/contact",
+      "https://www.linkedin.com/company/aurigaspace/jobs",
+      "https://www.linkedin.com/jobs/view/cnc-programmer-and-machinist-at-auriga-space-4461267547",
+      "https://www.aurigaspace.com/news/auriga-space-completes-first-in-field-launch-of-hermes-its-containerized-electromagnetic-platform-for-counter-uas"
+    ]
+  },
+  {
+    "signal_id": "CRE-009",
+    "company_id": "OC-085",
+    "company_name": "Volund Manufacturing",
+    "city": "Huntington Beach",
+    "address": null,
+    "maturity": "Emerging defense manufacturer",
+    "facility_type": "Jet-turbine / propulsion manufacturing",
+    "facility_sqft": null,
+    "site_area_acres": null,
+    "occupancy_status": "Current Huntington Beach operation; exact facility not yet captured",
+    "signal_date": "2026-09",
+    "signal_type": "Production-process buildout",
+    "observed_evidence": [
+      "Raised $12M seed financing in June 2026.",
+      "Hiring manufacturing engineers to scale in-house superalloy sheet-metal forming, rolling, spinning and stamping.",
+      "Company describes a model moving from prototype to production using automation and precision manufacturing."
+    ],
+    "space_requirements": [
+      "metal forming",
+      "precision manufacturing",
+      "turbine assembly",
+      "automation",
+      "engineering"
+    ],
+    "cre_interpretation": "Good early-stage industrial tenant watch because manufacturing processes are being internalized. Highest-value missing fact is the current Huntington Beach address/footprint.",
+    "signal_strength": "Moderate-high / early watch",
+    "source_urls": [
+      "https://volundmanufacturing.applytojob.com/apply/CSDcCNJPsY/Manufacturing-Engineer-Sheet-Metal",
+      "https://volundmanufacturing.applytojob.com/apply/4X4NH8aBB8/Turbine-Engine-Designer"
+    ]
+  },
+  {
+    "signal_id": "CRE-010",
+    "company_id": "OC-035",
+    "company_name": "HopAero",
+    "city": "Orange",
+    "address": null,
+    "maturity": "Emerging aerospace company",
+    "facility_type": "Rocket / propulsion R&D",
+    "facility_sqft": null,
+    "site_area_acres": null,
+    "occupancy_status": "Orange HQ coordinates verified; street address not captured",
+    "signal_date": "2026-09-30",
+    "signal_type": "Capital catalyst / early watch",
+    "observed_evidence": [
+      "Raised $11M on Sep. 30, 2026.",
+      "Company reports a $1.25M U.S. Air Force contract and recent propulsion/test milestones.",
+      "Team remains small, so a direct space requirement is not yet publicly visible."
+    ],
+    "space_requirements": [
+      "propulsion R&D",
+      "prototype assembly",
+      "test support",
+      "engineering"
+    ],
+    "cre_interpretation": "Watch-list rather than active lead. Capital and government validation could precede headcount/facility growth, but there is not yet a public expansion commitment.",
+    "signal_strength": "Early / monitor",
+    "source_urls": [
+      "https://hopaero.com/",
+      "https://payloadspace.com/exclusive-hop-aero-raises-11m-for-suborbital-point-to-point-delivery/",
+      "https://www.ycombinator.com/companies/hop-aero/"
+    ]
+  }
+]

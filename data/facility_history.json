@@ -1,0 +1,80 @@
+[
+  {
+    "facility_event_id": "FAC-001",
+    "company_id": "OC-033",
+    "company_name": "Harbinger Motors",
+    "event_date": "2023-08-24",
+    "city": "Garden Grove",
+    "address": "12821 Knott St, Garden Grove, CA 92841",
+    "event_type": "Lease",
+    "square_feet": 165171,
+    "site_acres": null,
+    "detail": "Colliers announced a 165,171 sq ft lease for Harbinger's manufacturing/distribution facility; planned upfit included ~40,000 sq ft of office and engineering.",
+    "source_url": "https://www.colliers.com/en/news/los-angeles/innovative-commercial-ev-company-harbinger-motors-lands-facility-in-garden-grove"
+  },
+  {
+    "facility_event_id": "FAC-002",
+    "company_id": "OC-033",
+    "company_name": "Harbinger Motors",
+    "event_date": "2025-06-23",
+    "city": "Garden Grove",
+    "address": "12821 Knott St, Garden Grove, CA 92841",
+    "event_type": "Interior expansion / entitlement",
+    "square_feet": 10338,
+    "site_acres": 7.97,
+    "detail": "City environmental filing described an approximately 173,000 sq ft existing manufacturing building and proposed a 10,338 sq ft office mezzanine.",
+    "source_url": "https://ceqanet.lci.ca.gov/2025050492/2"
+  },
+  {
+    "facility_event_id": "FAC-003",
+    "company_id": "OC-014",
+    "company_name": "AstroForge",
+    "event_date": "2024-09-16",
+    "city": "Seal Beach",
+    "address": "1790 Apollo Ct, Seal Beach, CA 90740",
+    "event_type": "Headquarters expansion",
+    "square_feet": 64000,
+    "site_acres": null,
+    "detail": "Company announced move into a 64,000 sq ft HQ supporting spacecraft integration, internal manufacturing, testing and office functions.",
+    "source_url": "https://www.astroforge.com/updates-collection/onward-and-upward-astroforge-expands-into-a-new-hq"
+  },
+  {
+    "facility_event_id": "FAC-004",
+    "company_id": "OC-067",
+    "company_name": "Senra Systems",
+    "event_date": "2026-01-28",
+    "city": "Cypress",
+    "address": "6100 Chip Ave, Cypress, CA 90630",
+    "event_type": "Factory opening / expansion",
+    "square_feet": 80000,
+    "site_acres": null,
+    "detail": "Factory 2 expanded Senra's production footprint 5X and became its first large-scale system-driven manufacturing deployment.",
+    "source_url": "https://www.senrasystems.us/media/factory-2"
+  },
+  {
+    "facility_event_id": "FAC-005",
+    "company_id": "OC-067",
+    "company_name": "Senra Systems",
+    "event_date": "2026-07-15",
+    "city": null,
+    "address": null,
+    "event_type": "Planned next facility",
+    "square_feet": null,
+    "site_acres": null,
+    "detail": "Company announced that Series B funding would support a planned Factory 3; location and size were not disclosed.",
+    "source_url": "https://www.senrasystems.us/media/announcing-our-series-b"
+  },
+  {
+    "facility_event_id": "FAC-006",
+    "company_id": "OC-044",
+    "company_name": "Mach Industries",
+    "event_date": "2026-02-24",
+    "city": "Huntington Beach",
+    "address": "5473 Bolsa Ave, Huntington Beach, CA 92647",
+    "event_type": "Existing flagship facility confirmed during expansion",
+    "square_feet": 115000,
+    "site_acres": null,
+    "detail": "Company identified Forge 1 as its 115,000 sq ft Huntington Beach HQ dedicated to engineering, rapid prototyping and advanced manufacturing.",
+    "source_url": "https://machindustries.com/articles/mach-industries-announces-san-francisco-expansion"
+  }
+]

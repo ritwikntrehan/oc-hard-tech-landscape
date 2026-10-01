@@ -1155,10 +1155,10 @@
     "sector_group": "Aerospace & Space",
     "maturity": "Unclassified",
     "city": "Cypress",
-    "address": null,
-    "latitude": 33.818315,
-    "longitude": -118.039045,
-    "coordinate_basis": "Orange County city centroid (not facility-level coordinate)",
+    "address": "6100 Chip Ave, Cypress, CA 90630",
+    "latitude": 33.80456,
+    "longitude": -118.02672,
+    "coordinate_basis": "Verified facility coordinate from public/government source",
     "qa_status": "PASS"
   },
   {
